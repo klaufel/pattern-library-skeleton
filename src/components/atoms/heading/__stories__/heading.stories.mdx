@@ -1,0 +1,77 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { select, text } from '@storybook/addon-knobs';
+import Heading, { HEADINGS_TYPES, HEADINGS_SIZES } from '..';
+
+export const knobsProps = () => ({
+  type: select('type', HEADINGS_TYPES),
+  size: select('size', HEADINGS_SIZES),
+  children: text('text', 'Lorem ipsum dolor sit amet'),
+});
+
+<Meta title='Atoms/Heading' component={Heading} />
+
+# Heading
+
+Let's define a story for our `Heading` component:
+
+<Preview>
+  <Story name='Default'>
+    <Heading>Lorem ipsum dolor sit amet</Heading>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Heading} />
+
+## Stories
+
+### Sizes
+
+##### Size: sm
+
+<Preview>
+  <Story name='Size: sm'>
+    <Heading size='sm'>Lorem ipsum dolor sit amet</Heading>
+  </Story>
+</Preview>
+
+##### Size: md
+
+<Preview>
+  <Story name='Size: md'>
+    <Heading size='md'>Lorem ipsum dolor sit amet</Heading>
+  </Story>
+</Preview>
+
+##### Size: lg
+
+<Preview>
+  <Story name='Size: lg'>
+    <Heading size='lg'>Lorem ipsum dolor sit amet</Heading>
+  </Story>
+</Preview>
+
+### Types
+
+<Preview>
+  <Story name='Types'>
+    <div>
+      <Heading type='h1'>Heading as `h1` tag</Heading>
+      <Heading type='h2'>Heading as `h2` tag</Heading>
+      <Heading type='h3'>Heading as `h3` tag</Heading>
+      <Heading type='h4'>Heading as `h4` tag</Heading>
+      <Heading type='h5'>Heading as `h5` tag</Heading>
+      <Heading type='h6'>Heading as `h6` tag</Heading>
+      <Heading type='span'>Heading as `span` tag</Heading>
+    </div>
+  </Story>
+</Preview>
+
+## Knobs
+
+<Preview>
+  <Story name='Knobs'>
+    <Heading {...knobsProps()} />
+  </Story>
+</Preview>

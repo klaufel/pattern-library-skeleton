@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label it works default 1`] = `
+<label
+  class="Label"
+  for="default-label"
+>
+  Default label
+</label>
+`;

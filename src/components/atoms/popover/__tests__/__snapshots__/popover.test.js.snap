@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popover it works default 1`] = `
+<div
+  class="Popover"
+>
+  <div>
+    ...children
+  </div>
+</div>
+`;
+
+exports[`Popover it works with is open 1`] = `
+<div
+  class="Popover is-active"
+>
+  <div>
+    ...children
+  </div>
+</div>
+`;
+
+exports[`Popover it works with with close on click outisde 1`] = `
+<div
+  class="Popover is-active"
+>
+  <div>
+    ...children
+  </div>
+</div>
+`;

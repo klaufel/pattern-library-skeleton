@@ -1,0 +1,33 @@
+@mixin fontSizeVariation($sizes, $size) {
+  @each $key, $value in $sizes {
+    @if $key == $size {
+      font-size: $value;
+    }
+  }
+}
+
+@mixin borderRadiusVariation($shapes, $shape) {
+  @each $key, $value in $shapes {
+    @if $key == $shape {
+      border-radius: $value;
+    }
+  }
+}
+
+@mixin InputBorder($color, $color-onHover, $color-onFocus) {
+  border: 1px solid $color;
+
+  &:hover {
+    border-color: $Input-onHover-borderColor;
+  }
+
+  &:focus {
+    border-color: $Input-onFocus-borderColor;
+  }
+
+  &:disabled {
+    &:hover {
+      border-color: $Input-borderColor;
+    }
+  }
+}

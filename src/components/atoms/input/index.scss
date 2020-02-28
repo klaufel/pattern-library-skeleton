@@ -1,0 +1,71 @@
+@import '../../../styles/index';
+
+$Input-border: true !default;
+
+$Input-color: $c-black !default;
+$Input-background: $c-white !default;
+$Input-borderColor: $c-gray-light-2 !default;
+$Input-fontSize: 'l' !default;
+$Input-lineHeight: $lh-xl !default;
+$Input-paddingY: $p-m !default;
+$Input-paddingX: $p-h !default;
+$Input-borderRadius: $bdrs-none !default;
+$Input-placeholder-color: $c-gray-light-1 !default;
+
+$Input-onHover-borderColor: $c-black !default;
+$Input-onFocus-borderColor: $c-black !default;
+
+$Input--disabled-color: $c-gray !default;
+$Input--disabled-backgroundColor: $c-gray-light-3 !default;
+
+$Input-fontSizes: (
+  's': $fz-s,
+  'm': $fz-m,
+  'l': $fz-l,
+);
+
+.Input {
+  display: block;
+  width: 100%;
+  background: $Input-background;
+  border: 0;
+  font-family: inherit;
+  padding: $Input-paddingY $Input-paddingX;
+  border-radius: $Input-borderRadius;
+  color: $Input-color;
+  line-height: $Input-lineHeight;
+  -webkit-appearance: none;
+  @include fontSizeVariation($Input-fontSizes, $Input-fontSize);
+  transition: color 0.2s, border-color 0.2s;
+
+  @if $Input-border == true {
+    @include InputBorder(
+      $Input-borderColor,
+      $Input-onHover-borderColor,
+      $Input-onFocus-borderColor
+    );
+  } @else {
+    border: 0;
+  }
+
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $Input-placeholder-color;
+    opacity: 1;
+    transition: color 0.3s;
+  }
+
+  &:disabled {
+    background-color: $Input--disabled-backgroundColor;
+    color: $Input--disabled-color;
+    cursor: not-allowed;
+    opacity: 1;
+  }
+}

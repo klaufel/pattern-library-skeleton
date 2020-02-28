@@ -1,0 +1,7 @@
+@import '../../../styles/lib/index';
+
+$FormField-marginBottom: $m-l !default;
+
+.FormField {
+  margin-bottom: $FormField-marginBottom;
+}

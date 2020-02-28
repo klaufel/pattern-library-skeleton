@@ -1,0 +1,90 @@
+@import '../../../styles/lib/index';
+
+$Calendar-week-fontSize: 's' !default;
+$Calendar-day-fontSize: 'm' !default;
+$Calendar-day-fontColor: $c-black !default;
+$Calendar-day--prevNext-fontColor: $c-gray !default;
+$Calendar-day-onHover-backgroundColor: $c-gray-light-3 !default;
+$Calendar-day-isSelected-backgroundColor: $c-primary !default;
+$Calendar-day-isSelected-color: $c-white !default;
+$Calendar-shape: 'circle' !default;
+
+$Calendar-day-width: 44px;
+$Calendar-width: $Calendar-day-width * 7;
+$Calendar-shapes: (
+  'circle': $bdrs-rounded,
+  'square': $bdrs-none,
+);
+$Calendar-fontSizes: (
+  's': $fz-s,
+  'm': $fz-m,
+  'l': $fz-l,
+);
+
+.Calendar {
+  max-width: $Calendar-width;
+  margin: 0 auto;
+}
+
+.Calendar-header {
+  width: 100%;
+  display: flex;
+  padding-bottom: $p-m;
+}
+
+.Calendar-month {
+  flex: 1 auto;
+  text-align: center;
+  padding: $p-s $p-m;
+}
+
+.Calendar-arrow {
+  cursor: pointer;
+  padding: 2px $p-s;
+}
+
+.Calendar-grid {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(7, $Calendar-day-width);
+  grid-template-rows: 1fr repeat(6, $Calendar-day-width);
+  align-items: center;
+  justify-content: center;
+}
+
+.Calendar-week {
+  padding: $p-m 0;
+  text-align: center;
+  @include fontSizeVariation($Calendar-fontSizes, $Calendar-week-fontSize);
+
+  &--weekend {
+    font-weight: 700;
+  }
+}
+
+.Calendar-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: $Calendar-day-fontColor;
+  @include fontSizeVariation($Calendar-fontSizes, $Calendar-day-fontSize);
+  @include borderRadiusVariation($Calendar-shapes, $Calendar-shape);
+  transition: color 0.2s, background-color 0.2s;
+
+  &--prev,
+  &--next {
+    color: $Calendar-day--prevNext-fontColor;
+  }
+
+  &:hover {
+    background-color: $Calendar-day-onHover-backgroundColor;
+  }
+
+  &.is-selected {
+    color: $Calendar-day-isSelected-color;
+    background-color: $Calendar-day-isSelected-backgroundColor;
+  }
+}

@@ -1,0 +1,828 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calendar it works with a default date 1`] = `
+<div
+  class="Calendar"
+>
+  <div
+    class="Calendar-header"
+  >
+    <span
+      class="Calendar-arrow"
+    >
+      <svg
+        class="Icon Icon--md"
+        enable-background="new 0 0 24 24"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.5 20.4L7.1 12l8.4-8.4L16.9 5l-7 7 7 7z"
+        />
+      </svg>
+    </span>
+    <span
+      class="Calendar-month"
+    >
+      <span
+        class="Heading Heading--sm"
+      >
+        October
+         
+        1994
+      </span>
+    </span>
+    <span
+      class="Calendar-arrow"
+    >
+      <svg
+        class="Icon Icon--md"
+        enable-background="new 0 0 24 24"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.5 20.4l8.4-8.4-8.4-8.4L7.1 5l7 7-7 7z"
+        />
+      </svg>
+    </span>
+  </div>
+  <div
+    class="Calendar-grid"
+  >
+    <div
+      class="Calendar-week Calendar-week--weekend"
+    >
+      Sun
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Mon
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Tue
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Wed
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Thu
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Fri
+    </div>
+    <div
+      class="Calendar-week Calendar-week--weekend"
+    >
+      Sat
+    </div>
+    <div
+      class="Calendar-day Calendar-day--prev"
+    >
+      25
+    </div>
+    <div
+      class="Calendar-day Calendar-day--prev"
+    >
+      26
+    </div>
+    <div
+      class="Calendar-day Calendar-day--prev"
+    >
+      27
+    </div>
+    <div
+      class="Calendar-day Calendar-day--prev"
+    >
+      28
+    </div>
+    <div
+      class="Calendar-day Calendar-day--prev"
+    >
+      29
+    </div>
+    <div
+      class="Calendar-day Calendar-day--prev"
+    >
+      30
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current is-selected"
+    >
+      1
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      2
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      3
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      4
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      5
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      6
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      7
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      8
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      9
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      10
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      11
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      12
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      13
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      14
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      15
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      16
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      17
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      18
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      19
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      20
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      21
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      22
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      23
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      24
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      25
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      26
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      27
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      28
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      29
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      30
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      31
+    </div>
+    <div
+      class="Calendar-day Calendar-day--next"
+    >
+      1
+    </div>
+    <div
+      class="Calendar-day Calendar-day--next"
+    >
+      2
+    </div>
+    <div
+      class="Calendar-day Calendar-day--next"
+    >
+      3
+    </div>
+    <div
+      class="Calendar-day Calendar-day--next"
+    >
+      4
+    </div>
+    <div
+      class="Calendar-day Calendar-day--next"
+    >
+      5
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Calendar it works with a default date and year/month selected 1`] = `
+<div
+  class="Calendar"
+>
+  <div
+    class="Calendar-header"
+  >
+    <span
+      class="Calendar-arrow"
+    >
+      <svg
+        class="Icon Icon--md"
+        enable-background="new 0 0 24 24"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.5 20.4L7.1 12l8.4-8.4L16.9 5l-7 7 7 7z"
+        />
+      </svg>
+    </span>
+    <span
+      class="Calendar-month"
+    >
+      <span
+        class="Heading Heading--sm"
+      >
+        February
+         
+        2020
+      </span>
+    </span>
+    <span
+      class="Calendar-arrow"
+    >
+      <svg
+        class="Icon Icon--md"
+        enable-background="new 0 0 24 24"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.5 20.4l8.4-8.4-8.4-8.4L7.1 5l7 7-7 7z"
+        />
+      </svg>
+    </span>
+  </div>
+  <div
+    class="Calendar-grid"
+  >
+    <div
+      class="Calendar-week Calendar-week--weekend"
+    >
+      Sun
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Mon
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Tue
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Wed
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Thu
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Fri
+    </div>
+    <div
+      class="Calendar-week Calendar-week--weekend"
+    >
+      Sat
+    </div>
+    <div
+      class="Calendar-day Calendar-day--prev"
+    >
+      26
+    </div>
+    <div
+      class="Calendar-day Calendar-day--prev"
+    >
+      27
+    </div>
+    <div
+      class="Calendar-day Calendar-day--prev"
+    >
+      28
+    </div>
+    <div
+      class="Calendar-day Calendar-day--prev"
+    >
+      29
+    </div>
+    <div
+      class="Calendar-day Calendar-day--prev"
+    >
+      30
+    </div>
+    <div
+      class="Calendar-day Calendar-day--prev is-selected"
+    >
+      31
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      1
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      2
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      3
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      4
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      5
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      6
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      7
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      8
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      9
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      10
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      11
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      12
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      13
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      14
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      15
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      16
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      17
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      18
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      19
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      20
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      21
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      22
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      23
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      24
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      25
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      26
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      27
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      28
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      29
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Calendar it works with a year and month 1`] = `
+<div
+  class="Calendar"
+>
+  <div
+    class="Calendar-header"
+  >
+    <span
+      class="Calendar-arrow"
+    >
+      <svg
+        class="Icon Icon--md"
+        enable-background="new 0 0 24 24"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.5 20.4L7.1 12l8.4-8.4L16.9 5l-7 7 7 7z"
+        />
+      </svg>
+    </span>
+    <span
+      class="Calendar-month"
+    >
+      <span
+        class="Heading Heading--sm"
+      >
+        June
+         
+        1970
+      </span>
+    </span>
+    <span
+      class="Calendar-arrow"
+    >
+      <svg
+        class="Icon Icon--md"
+        enable-background="new 0 0 24 24"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.5 20.4l8.4-8.4-8.4-8.4L7.1 5l7 7-7 7z"
+        />
+      </svg>
+    </span>
+  </div>
+  <div
+    class="Calendar-grid"
+  >
+    <div
+      class="Calendar-week Calendar-week--weekend"
+    >
+      Sun
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Mon
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Tue
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Wed
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Thu
+    </div>
+    <div
+      class="Calendar-week"
+    >
+      Fri
+    </div>
+    <div
+      class="Calendar-week Calendar-week--weekend"
+    >
+      Sat
+    </div>
+    <div
+      class="Calendar-day Calendar-day--prev"
+    >
+      31
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      1
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      2
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      3
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      4
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      5
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      6
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      7
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      8
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      9
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      10
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      11
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      12
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      13
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      14
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      15
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      16
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      17
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      18
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      19
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      20
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      21
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      22
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      23
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      24
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      25
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      26
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      27
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      28
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      29
+    </div>
+    <div
+      class="Calendar-day Calendar-day--current"
+    >
+      30
+    </div>
+    <div
+      class="Calendar-day Calendar-day--next"
+    >
+      1
+    </div>
+    <div
+      class="Calendar-day Calendar-day--next"
+    >
+      2
+    </div>
+    <div
+      class="Calendar-day Calendar-day--next"
+    >
+      3
+    </div>
+    <div
+      class="Calendar-day Calendar-day--next"
+    >
+      4
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input it works default 1`] = `
+<input
+  class="Input"
+  value=""
+/>
+`;
+
+exports[`Input it works with default value 1`] = `
+<input
+  class="Input"
+  placeholder="Placeholder"
+  value="Default value"
+/>
+`;
+
+exports[`Input it works with disabled attr 1`] = `
+<input
+  class="Input"
+  disabled=""
+  placeholder="Placeholder"
+  value="Default value"
+/>
+`;
+
+exports[`Input it works with id and name attr 1`] = `
+<input
+  class="Input"
+  id="id"
+  name="name"
+  value=""
+/>
+`;
+
+exports[`Input it works with placeholder 1`] = `
+<input
+  class="Input"
+  placeholder="Placeholder"
+  value=""
+/>
+`;
+
+exports[`Input it works with readonly attr 1`] = `
+<input
+  class="Input"
+  placeholder="Placeholder"
+  readonly=""
+  value="Default value"
+/>
+`;

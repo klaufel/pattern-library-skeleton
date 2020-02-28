@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button it works default 1`] = `
+<button
+  class="Button"
+>
+  Default button
+</button>
+`;
+
+exports[`Button it works disabled 1`] = `
+<button
+  class="Button"
+  disabled=""
+>
+  Default button
+</button>
+`;
+
+exports[`Button it works with onClick event 1`] = `
+<button
+  class="Button"
+>
+  Default button
+</button>
+`;

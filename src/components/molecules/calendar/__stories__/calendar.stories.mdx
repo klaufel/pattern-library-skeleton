@@ -1,0 +1,62 @@
+import { Meta, Props, Block, Story, Preview } from '@storybook/addon-docs/blocks';
+import { text, number } from '@storybook/addon-knobs';
+import Calendar from '..';
+
+<Meta title='Molecules/Calendar' component={Calendar} />
+
+# Calendar
+
+`Calendar` component to show dates including the months, years and days of the week.
+
+<Preview>
+  <Story name='Default'>
+    <Calendar />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Calendar} />
+
+## Stories
+
+### Selected month and year
+
+<Preview>
+  <Story name='Default month and year'>
+    <Calendar month={3} year={1955} />
+  </Story>
+</Preview>
+
+###### Values in the story
+
+⋅ Month: **March (3)**
+⋅ Year: **1955**
+
+### Selected date
+
+<Preview>
+  <Story name='Selected date'>
+    <Calendar date='01/10/1994' />
+  </Story>
+</Preview>
+
+###### Values in the story
+
+⋅ Date selected: **01/10/1994**
+
+### Selected date with a month and year
+
+<Preview>
+  <Story name='Selected date with a month and year'>
+    <Calendar date='31/01/2020' month={2} year={2020} />
+  </Story>
+</Preview>
+
+> If you have a selected date and also a month and year, the indicated date will be selected but the month and year will be displayed on the calendar
+
+###### Values in the story
+
+⋅ Date selected: **31/01/2020** _(January)_
+⋅ Month: **February (2)**
+⋅ Year: **2020**

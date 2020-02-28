@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading it works default 1`] = `
+<h1
+  class="Heading Heading--md"
+>
+  Lorem ipsum dolor sit amet
+</h1>
+`;
+
+exports[`Heading it works with all sizes variations 1`] = `
+<div>
+  <h1
+    class="Heading Heading--sm"
+  >
+    Lorem ipsum dolor sit amet
+  </h1>
+  <h1
+    class="Heading Heading--md"
+  >
+    Lorem ipsum dolor sit amet
+  </h1>
+  <h1
+    class="Heading Heading--lg"
+  >
+    Lorem ipsum dolor sit amet
+  </h1>
+</div>
+`;
+
+exports[`Heading it works with all types variations 1`] = `
+<div>
+  <h1
+    class="Heading Heading--md"
+  >
+    Lorem ipsum dolor sit amet
+  </h1>
+  <h2
+    class="Heading Heading--md"
+  >
+    Lorem ipsum dolor sit amet
+  </h2>
+  <h3
+    class="Heading Heading--md"
+  >
+    Lorem ipsum dolor sit amet
+  </h3>
+  <h4
+    class="Heading Heading--md"
+  >
+    Lorem ipsum dolor sit amet
+  </h4>
+  <h5
+    class="Heading Heading--md"
+  >
+    Lorem ipsum dolor sit amet
+  </h5>
+  <h6
+    class="Heading Heading--md"
+  >
+    Lorem ipsum dolor sit amet
+  </h6>
+  <span
+    class="Heading Heading--md"
+  >
+    Lorem ipsum dolor sit amet
+  </span>
+</div>
+`;

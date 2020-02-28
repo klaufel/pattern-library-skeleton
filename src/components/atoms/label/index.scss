@@ -1,0 +1,13 @@
+@import '../../../styles/lib/index';
+
+$Label-fontSize: $fz-m !default;
+$Label-fontWeight: $fw-semi-bold !default;
+$Label-color: $c-black !default;
+
+.Label {
+  display: block;
+  font-size: $Label-fontSize;
+  font-weight: $Label-fontWeight;
+  color: $Label-color;
+  padding: $p-s 0;
+}

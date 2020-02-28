@@ -1,0 +1,72 @@
+{
+  "name": "pattern-library-skeleton",
+  "version": "1.0.0",
+  "description": "Design System (Pattern library skeleton)",
+  "license": "ISC",
+  "author": "Juan Carlos Ruiz <klaufel@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klaufel/pattern-library-skeleton.git"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 9001",
+    "storybook:build": "build-storybook -o storybook -c .storybook",
+    "lint": "npm run lint:js && npm run lint:sass",
+    "lint:js": "sui-lint js",
+    "lint:sass": "sui-lint sass",
+    "prettier:check": "prettier \"./**/*.{js,mdx,scss}\" --check",
+    "prettier:write": "prettier \"./**/*.{js,mdx,scss}\" --write",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:update": "jest --updateSnapshot",
+    "test:coverage": "jest --coverage",
+    "test:coverage-web": "npm run test:coverage && open coverage/lcov-report/index.html"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier:write",
+      "pre-push": "npm run test"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "prop-types": "^15.7.2",
+    "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@s-ui/component-dependencies": "^1.5.0",
+    "@storybook/addon-actions": "^5.3.13",
+    "@storybook/addon-docs": "^5.3.13",
+    "@storybook/addon-knobs": "^5.3.13",
+    "@storybook/react": "^5.3.13",
+    "@testing-library/react": "^9.4.1",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.6",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "jest-css-modules-transform": "^4.0.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.4.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^1.19.1"
+  }
+}
