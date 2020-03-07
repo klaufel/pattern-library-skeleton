@@ -24,14 +24,17 @@ const inputProps = formType => {
 
 const InputField = props => {
   const { formType } = props;
-  switch (formType) {
+  return formType === 'textarea' ? (
+    <Textarea {...props} />
+  ) : (
+    <Input {...props} {...inputProps(formType)} />
+  );
+  /*switch (formType) {
     case 'textarea':
       return <Textarea {...props} />;
-    case 'select':
-      return <Select {...props} />;
     default:
       return <Input {...props} {...inputProps(formType)} />;
-  }
+  }*/
 };
 
 const FormControl = ({
@@ -53,6 +56,7 @@ const FormControl = ({
         status={status}
         disabled={disabled}
         defaultValue={defaultValue}
+        formType={formType}
         {...props}
       />
     </Wrapper>
@@ -65,7 +69,7 @@ FormControl.propTypes = {
   placeholder: PropTypes.string,
   /** This Boolean attribute prevents the user from interacting with the button */
   disabled: PropTypes.bool,
-  formType: PropTypes.oneOf(['input', 'email', 'phone', 'number', 'textarea', 'password']),
+  formType: PropTypes.oneOf(['', 'input', 'email', 'phone', 'number', 'password', 'textarea']),
 };
 
 export default FormControl;
