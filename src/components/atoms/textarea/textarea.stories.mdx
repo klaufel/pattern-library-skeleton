@@ -1,0 +1,54 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { text, boolean, select } from '@storybook/addon-knobs';
+import Textarea from '.';
+
+export const knobsProps = () => ({
+  defaultValue: text('defaultValue', ''),
+  disabled: boolean('disabled', false),
+  status: select('status', { default: '', success: 'success', error: 'error' }, ''),
+});
+
+<Meta title='Atoms/Textarea' component={Textarea} />
+
+# Textarea
+
+The `Textarea`
+
+<Preview>
+  <Story name='Default'>
+    <Textarea />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Textarea} />
+
+## Stories
+
+### Disabled
+
+<Preview>
+  <Story name='Disabled'>
+    <Textarea disabled />
+  </Story>
+</Preview>
+
+### Status
+
+<Preview>
+  <Story name='Status success'>
+    <Textarea status='success' defaultValue='Lorem ipsum dolor' />
+  </Story>
+  <Story name='Status error'>
+    <Textarea status='error' defaultValue='Lorem ipsum dolor' />
+  </Story>
+</Preview>
+
+## Knobs
+
+<Preview>
+  <Story name='Knobs'>
+    <Textarea {...knobsProps()} />
+  </Story>
+</Preview>

@@ -1,20 +1,16 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import './index.scss';
+import styled from 'styled-components';
 
-const Label = ({ text, name }) => (
-  <label className='Label' htmlFor={name}>
-    {text}
-  </label>
-);
-
-Label.displayName = 'Label';
+const Label = styled.label`
+  display: block;
+  font-size: ${props => props.theme.typography.body.normal.fontSize};
+  line-height: ${props => props.theme.typography.body.normal.lineHeight};
+  padding-bottom: ${props => props.theme.spacing.xxs};
+`;
 
 Label.propTypes = {
-  /** The label itself */
-  text: PropTypes.string.isRequired,
-  /** Used as for attribute. Must be the same as the form element id */
-  name: PropTypes.string.isRequired,
+  /** This Boolean attribute prevents the user from interacting with the button */
+  disabled: PropTypes.bool,
 };
 
 export default Label;

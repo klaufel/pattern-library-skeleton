@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label it works default 1`] = `
+.c0 {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 4px;
+}
+
+<label
+  class="c0"
+>
+  Default label
+</label>
+`;

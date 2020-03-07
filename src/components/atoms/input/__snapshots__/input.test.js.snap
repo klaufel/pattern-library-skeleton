@@ -1,0 +1,463 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input it works default 1`] = `
+.c0 {
+  background-clip: padding-box;
+  background-color: #ffffff;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  color: #333333;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  height: 48px;
+  outline: none;
+  padding: 16px 16px;
+  text-align: left;
+  -webkit-transition: border 0.3s,background-color 0.3s,color 0.3s,box-shadow 0.3s;
+  transition: border 0.3s,background-color 0.3s,color 0.3s,box-shadow 0.3s;
+  width: 100%;
+  background-position: top 12px right 12px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMxMDdCMDAiIGQ9Ik04LjggMTUuOWwtNC4yLTQuMi0xLjQgMS40IDUuNiA1LjYgMTItMTItMS40LTEuNC0xMC42IDEwLjZ6Ii8+PC9zdmc+');
+}
+
+.c0,
+.c0:hover,
+.c0:focus,
+.c0:active {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.c0:hover {
+  border-color: #333333;
+}
+
+.c0:focus {
+  border-color: #0069a7;
+  box-shadow: 0 0 5px 0 #0069a7;
+}
+
+.c0::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #999999;
+  opacity: 1;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c0::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999999;
+  opacity: 1;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c0::placeholder {
+  color: #999999;
+  opacity: 1;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c0:disabled,
+.c0[readonly] {
+  background-image: none;
+  background-color: #f2f2f2;
+  border-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled::-webkit-input-placeholder,
+.c0[readonly]::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled::-moz-placeholder,
+.c0[readonly]::-moz-placeholder {
+  color: #999999;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled:-ms-input-placeholder,
+.c0[readonly]:-ms-input-placeholder {
+  color: #999999;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled::placeholder,
+.c0[readonly]::placeholder {
+  color: #999999;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled:hover,
+.c0[readonly]:hover {
+  border-color: #cccccc;
+  box-shadow: none;
+}
+
+.c0:focus {
+  font-weight: 400;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c0:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c0:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c0:focus::placeholder {
+  opacity: 1;
+}
+
+.c0,
+.c0:hover {
+  border-color: #118000;
+}
+
+<input
+  class="c0"
+/>
+`;
+
+exports[`Input it works with status error 1`] = `
+.c0 {
+  background-clip: padding-box;
+  background-color: #ffffff;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  color: #333333;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  height: 48px;
+  outline: none;
+  padding: 16px 16px;
+  text-align: left;
+  -webkit-transition: border 0.3s,background-color 0.3s,color 0.3s,box-shadow 0.3s;
+  transition: border 0.3s,background-color 0.3s,color 0.3s,box-shadow 0.3s;
+  width: 100%;
+  background-position: top 12px right 12px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNBOTAwMTYiIGQ9Ik0yMSAyMmgtMThjLS4zIDAtLjctLjItLjktLjUtLjItLjMtLjItLjcgMC0xbDktMThjLjMtLjcgMS40LS43IDEuOCAwbDkgMThjLjIuMy4xLjcgMCAxLS4yLjMtLjYuNS0uOS41em0tMTYuNC0yaDE0LjhsLTcuNC0xNC44LTcuNCAxNC44ek0xMSAxMGgydjZoLTJ6Ii8+PGNpcmNsZSBmaWxsPSIjQTkwMDE2IiBjeD0iMTIiIGN5PSIxOCIgcj0iMS4zIi8+PC9zdmc+');
+}
+
+.c0,
+.c0:hover,
+.c0:focus,
+.c0:active {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.c0:hover {
+  border-color: #333333;
+}
+
+.c0:focus {
+  border-color: #0069a7;
+  box-shadow: 0 0 5px 0 #0069a7;
+}
+
+.c0::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #999999;
+  opacity: 1;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c0::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999999;
+  opacity: 1;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c0::placeholder {
+  color: #999999;
+  opacity: 1;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c0:disabled,
+.c0[readonly] {
+  background-image: none;
+  background-color: #f2f2f2;
+  border-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled::-webkit-input-placeholder,
+.c0[readonly]::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled::-moz-placeholder,
+.c0[readonly]::-moz-placeholder {
+  color: #999999;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled:-ms-input-placeholder,
+.c0[readonly]:-ms-input-placeholder {
+  color: #999999;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled::placeholder,
+.c0[readonly]::placeholder {
+  color: #999999;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled:hover,
+.c0[readonly]:hover {
+  border-color: #cccccc;
+  box-shadow: none;
+}
+
+.c0:focus {
+  font-weight: 400;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c0:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c0:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c0:focus::placeholder {
+  opacity: 1;
+}
+
+.c0,
+.c0:hover {
+  border-color: #bf0019;
+}
+
+<input
+  class="c0"
+/>
+`;
+
+exports[`Input it works with status success 1`] = `
+.c0 {
+  background-clip: padding-box;
+  background-color: #ffffff;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  color: #333333;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  height: 48px;
+  outline: none;
+  padding: 16px 16px;
+  text-align: left;
+  -webkit-transition: border 0.3s,background-color 0.3s,color 0.3s,box-shadow 0.3s;
+  transition: border 0.3s,background-color 0.3s,color 0.3s,box-shadow 0.3s;
+  width: 100%;
+  background-position: top 12px right 12px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMxMDdCMDAiIGQ9Ik04LjggMTUuOWwtNC4yLTQuMi0xLjQgMS40IDUuNiA1LjYgMTItMTItMS40LTEuNC0xMC42IDEwLjZ6Ii8+PC9zdmc+');
+}
+
+.c0,
+.c0:hover,
+.c0:focus,
+.c0:active {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.c0:hover {
+  border-color: #333333;
+}
+
+.c0:focus {
+  border-color: #0069a7;
+  box-shadow: 0 0 5px 0 #0069a7;
+}
+
+.c0::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #999999;
+  opacity: 1;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c0::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999999;
+  opacity: 1;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c0::placeholder {
+  color: #999999;
+  opacity: 1;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c0:disabled,
+.c0[readonly] {
+  background-image: none;
+  background-color: #f2f2f2;
+  border-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled::-webkit-input-placeholder,
+.c0[readonly]::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled::-moz-placeholder,
+.c0[readonly]::-moz-placeholder {
+  color: #999999;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled:-ms-input-placeholder,
+.c0[readonly]:-ms-input-placeholder {
+  color: #999999;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled::placeholder,
+.c0[readonly]::placeholder {
+  color: #999999;
+}
+
+.c0:disabled,
+.c0[readonly],
+.c0:disabled:hover,
+.c0[readonly]:hover {
+  border-color: #cccccc;
+  box-shadow: none;
+}
+
+.c0:focus {
+  font-weight: 400;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c0:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c0:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c0:focus::placeholder {
+  opacity: 1;
+}
+
+.c0,
+.c0:hover {
+  border-color: #118000;
+}
+
+<input
+  class="c0"
+/>
+`;

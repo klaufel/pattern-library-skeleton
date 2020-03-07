@@ -1,37 +1,25 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Button = styled.button`
-  --Button-fontSize: 14px;
-  --Button-color: #fff;
-  --Button-backgroundColor: #2900d2;
-  --Button-backgroundColor--hover: #250095;
-  --Button-backgroundColor--active: #240080;
-  --Button-borderRadius: 0;
-  --Button-PaddingY: 8px;
-  --Button-PaddingX: 16px;
-
   align-items: center;
-  border: 0;
-  border-radius: var(--Button-borderRadius);
+
+  border-radius: 4px;
   cursor: pointer;
   display: flex;
-  font-size: var(--Button-fontSize);
-  line-height: var(--lh-button);
+  font-size: ${props => props.theme.typography.body.normal.fontSize};
+  line-height: ${props => props.theme.typography.body.normal.lineHeight};
   font-family: inherit;
   outline: none;
-  padding: var(--Button-PaddingY) var(--Button-PaddingX);
-  background-color: var(--Button-backgroundColor);
-  color: var(--Button-color);
+  border: 1px solid transparent;
+  padding: ${props => props.theme.spacing.sm} ${props => props.theme.spacing.md};
+  background-color: ${props => props.theme.colors.primary.main};
+  color: ${props => props.theme.colors.neutral.percent00};
   transition: color 0.2s, background-color 0.2s;
 
-  &:hover {
-    background-color: var(--Button-backgroundColor--hover);
-  }
-
+  &:hover,
   &:active {
-    background-color: var(--Button-backgroundColor--active);
+    background-color: ${props => props.theme.colors.primary.light};
   }
 
   &:disabled {
@@ -39,9 +27,28 @@ const Button = styled.button`
     opacity: 0.5;
 
     &:hover {
-      background-color: var(--Button-backgroundColor);
+      background-color: ${props => props.theme.colors.primary.main};
     }
   }
+
+  ${props =>
+    props.secondary &&
+    css`
+      background-color: ${props.theme.colors.neutral.percent00};
+      border-color: ${props.theme.colors.neutral.percent20};
+      color: ${props.theme.colors.neutral.percent80};
+
+      &:hover,
+      &:active {
+        background-color: ${props.theme.colors.neutral.percent05};
+      }
+
+      &:disabled {
+        &:hover {
+          background-color: ${props.theme.colors.neutral.percent00};
+        }
+      }
+    `}
 `;
 
 Button.displayName = 'Button';

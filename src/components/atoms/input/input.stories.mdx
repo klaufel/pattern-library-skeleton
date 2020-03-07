@@ -1,0 +1,54 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { text, boolean, select } from '@storybook/addon-knobs';
+import Input from '.';
+
+export const knobsProps = () => ({
+  defaultValue: text('defaultValue', ''),
+  disabled: boolean('disabled', false),
+  status: select('status', { default: '', success: 'success', error: 'error' }, ''),
+});
+
+<Meta title='Atoms/Input' component={Input} />
+
+# Input
+
+The `Input`
+
+<Preview>
+  <Story name='Default'>
+    <Input />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Input} />
+
+## Stories
+
+### Disabled
+
+<Preview>
+  <Story name='Disabled'>
+    <Input disabled />
+  </Story>
+</Preview>
+
+### Status
+
+<Preview>
+  <Story name='Status success'>
+    <Input status='success' defaultValue='Lorem ipsum dolor' />
+  </Story>
+  <Story name='Status error'>
+    <Input status='error' defaultValue='Lorem ipsum dolor' />
+  </Story>
+</Preview>
+
+## Knobs
+
+<Preview>
+  <Story name='Knobs'>
+    <Input {...knobsProps()} />
+  </Story>
+</Preview>
