@@ -9,7 +9,9 @@ Figma url: https://www.figma.com/file/IGr2xoqcZX91CU7CDr4ZsI/Design-tokens?node-
 <h4 align="center">A awesome design system for your products and experiences!</h4>
 
 <p align="center">
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/222e8120-908e-40fe-9f3a-c59e694ed4b8/deploy-status)](https://app.netlify.com/sites/pattern-library-skeleton/deploys)
+  <a href="https://app.netlify.com/sites/pattern-library-skeleton/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/222e8120-908e-40fe-9f3a-c59e694ed4b8/deploy-status" alt="Netlify Status">
+  </a>
 </p>
 
 <p align="center">
