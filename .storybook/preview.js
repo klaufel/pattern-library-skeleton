@@ -1,7 +1,7 @@
 import { addParameters, addDecorator } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import ContainerDecorator from './decorators/container';
-import '../src/styles/index.scss';
+import ThemeWrapper from '../src/decorators/ThemeWrapper';
+import SBContainer from '../src/decorators/SBContainer';
 
 addParameters({
   options: {
@@ -9,6 +9,8 @@ addParameters({
   },
 });
 
-addDecorator(ContainerDecorator);
+addDecorator(ThemeWrapper);
+
+addDecorator(SBContainer);
 
 addDecorator(withKnobs);

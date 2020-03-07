@@ -9,19 +9,33 @@ const rgbaGen = (r, g, b, a) => {
   return `rgba(${getColor(r)}, ${getColor(g)}, ${getColor(b)}, ${a})`;
 };
 
-const rgbaToHex = rgba => {
-  const parts = rgba.substring(rgba.indexOf('(')).split(',');
-  const r = parseInt(trim(parts[0].substring(1)), 10);
-  const g = parseInt(trim(parts[1]), 10);
-  const b = parseInt(trim(parts[2]), 10);
-  const a = parseFloat(trim(parts[3].substring(0, parts[3].length - 1))).toFixed(2);
-  return (
-    '#' +
-    r.toString(16) +
-    g.toString(16) +
-    b.toString(16) +
-    (a * 255).toString(16)
-  ).substring(0, 7);
+const rgbaGenObject = (r, g, b, a) => {
+  const getColor = color => {
+    return Math.round(color * 255);
+  };
+  return { r: getColor(r), g: getColor(g), b: getColor(b), a: a };
+};
+
+const rgbGen = (r, g, b) => {
+  const getColor = color => {
+    return Math.round(color * 255);
+  };
+  return `rgba(${getColor(r)}, ${getColor(g)}, ${getColor(b)})`;
+};
+
+const rgbToHex = rgb => {
+  let hex = Number(rgb).toString(16);
+  if (hex.length < 2) {
+    hex = '0' + hex;
+  }
+  return hex;
+};
+
+const fullColorHex = (r, g, b) => {
+  const red = rgbToHex(r);
+  const green = rgbToHex(g);
+  const blue = rgbToHex(b);
+  return `#${red + green + blue}`;
 };
 
 const getColors = (layerName, stylesArtboard) => {
@@ -33,9 +47,9 @@ const getColors = (layerName, stylesArtboard) => {
   paletteArtboard.map(item => {
     if (item.type === 'COMPONENT') {
       const { r, g, b, a } = item.children[0].fills[0].color;
-
+      const colorRGBA = rgbaGenObject(r, g, b, a);
       const colorObj = {
-        [camelCase(item.name)]: `${rgbaToHex(rgbaGen(r, g, b, a))}`,
+        [camelCase(item.name)]: `${fullColorHex(colorRGBA.r, colorRGBA.g, colorRGBA.b)}`,
       };
 
       Object.assign(palette, colorObj);

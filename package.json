@@ -8,12 +8,13 @@
     "type": "git",
     "url": "git+https://github.com/klaufel/pattern-library-skeleton.git"
   },
+  "bin": {
+    "design-tokens": "bin/design-tokens"
+  },
   "scripts": {
+    "tokens": "bin/design-tokens",
     "storybook": "start-storybook -p 9001",
     "storybook:build": "build-storybook -o storybook -c .storybook",
-    "lint": "npm run lint:js && npm run lint:sass",
-    "lint:js": "sui-lint js",
-    "lint:sass": "sui-lint sass",
     "prettier:check": "prettier \"./**/*.{js,mdx,scss}\" --check",
     "prettier:write": "prettier \"./**/*.{js,mdx,scss}\" --write",
     "test": "jest",
@@ -32,31 +33,31 @@
     "presets": [
       "@babel/preset-env",
       "@babel/preset-react"
+    ],
+    "plugins": [
+      [
+        "babel-plugin-styled-components",
+        {
+          "fileName": false
+        }
+      ],
+      "react-docgen"
     ]
   },
-  "peerDependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "prop-types": "^15.7.2",
-    "styled-components": "^5.0.1"
-  },
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
-    "@s-ui/component-dependencies": "^1.5.0",
-    "@storybook/addon-actions": "^5.3.13",
-    "@storybook/addon-docs": "^5.3.13",
-    "@storybook/addon-knobs": "^5.3.13",
-    "@storybook/react": "^5.3.13",
-    "@testing-library/react": "^9.4.1",
+    "@storybook/addon-actions": "^5.3.14",
+    "@storybook/addon-docs": "^5.3.14",
+    "@storybook/addon-knobs": "^5.3.14",
+    "@storybook/react": "^5.3.14",
+    "@testing-library/react": "^9.5.0",
     "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.6",
-    "husky": "^4.2.3",
-    "jest": "^25.1.0",
-    "jest-css-modules-transform": "^4.0.0",
-    "node-sass": "^4.13.1",
-    "sass-loader": "^8.0.2",
+    "babel-plugin-react-docgen": "^4.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "babel-polyfill": "^6.26.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-config-standard": "^14.1.0",
@@ -64,9 +65,21 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^2.4.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
     "eslint-plugin-standard": "^4.0.1",
+    "esm": "^3.2.25",
+    "fs": "0.0.2",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "jest-styled-components": "^7.0.0",
+    "node-fetch": "^2.6.0",
     "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "prop-types": "^15.7.2",
+    "styled-components": "^5.0.1"
   }
 }
