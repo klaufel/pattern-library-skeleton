@@ -1,19 +1,15 @@
 Figma url: https://www.figma.com/file/IGr2xoqcZX91CU7CDr4ZsI/Design-tokens?node-id=0%3A1
 
 <h1 align="center">
-  <a href="https://sui-components-datepicker.netlify.com/?path=/docs/design-system-intro--page"><img src="https://www.adevinta.com/wp-content/themes/scom/assets/img/Adevinta-logo.svg" alt="Markdownify" width="200"></a>
   <br><br>
-   Welcome to Adevinta Design System 👋
+   👋 Welcome to Pattern Library Skeleton! 
   <br>
 </h1>
 
 <h4 align="center">A awesome design system for your products and experiences!</h4>
 
 <p align="center">
-  <a href="https://app.netlify.com/sites/sui-components-datepicker/deploys">
-    <img src="https://api.netlify.com/api/v1/badges/93a5287a-c770-4585-9958-702541893391/deploy-status"
-         alt="Netlify Status">
-  </a>
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/222e8120-908e-40fe-9f3a-c59e694ed4b8/deploy-status)](https://app.netlify.com/sites/pattern-library-skeleton/deploys)
 </p>
 
 <p align="center">
