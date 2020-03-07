@@ -1,5 +1,5 @@
 import fs from 'fs';
-import getFigma from './design-tokens/getFigma';
+import getFigma from './getFigma';
 const path = './figma.config.json';
 
 export function cli(args) {
