@@ -34,7 +34,16 @@ const InputField = props => {
   }
 };
 
-const FormControl = ({ label, id, placeholder, status, disabled, defaultValue, formType, ...props }) => {
+const FormControl = ({
+  label,
+  id,
+  placeholder,
+  status,
+  disabled,
+  defaultValue,
+  formType,
+  ...props
+}) => {
   return (
     <Wrapper>
       {label && <Label htmlFor={id}>{label}</Label>}
