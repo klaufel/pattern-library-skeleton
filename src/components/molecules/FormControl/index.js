@@ -3,21 +3,48 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Label from '../../atoms/Label';
 import Input from '../../atoms/Input';
+import Textarea from '../../atoms/Textarea';
+import Select from '../../atoms/Select';
 
 const Wrapper = styled.div`
   padding-bottom: ${props => props.theme.spacing.md};
 `;
 
-const FormControl = ({ id, label, placeholder, status, disabled, defaultValue }) => {
+const inputProps = formType => {
+  const props = formType !== 'input' && { type: formType };
+  if (formType === 'email') {
+    const emailProps = {
+      autoCorrect: 'off',
+      autoCapitalize: 'none',
+    };
+    return { ...props, ...emailProps };
+  }
+  return props;
+};
+
+const InputField = props => {
+  const { formType } = props;
+  switch (formType) {
+    case 'textarea':
+      return <Textarea {...props} />;
+    case 'select':
+      return <Select {...props} />;
+    default:
+      return <Input {...props} {...inputProps(formType)} />;
+  }
+};
+
+const FormControl = ({ label, id, placeholder, status, disabled, defaultValue, formType, ...props }) => {
   return (
     <Wrapper>
       {label && <Label htmlFor={id}>{label}</Label>}
-      <Input
+      <InputField
         id={id}
-        defaultValue={defaultValue}
-        status={status}
         placeholder={placeholder}
+        status={status}
         disabled={disabled}
+        defaultValue={defaultValue}
+        {...props}
       />
     </Wrapper>
   );
@@ -29,6 +56,7 @@ FormControl.propTypes = {
   placeholder: PropTypes.string,
   /** This Boolean attribute prevents the user from interacting with the button */
   disabled: PropTypes.bool,
+  formType: PropTypes.oneOf(['input', 'email', 'phone', 'number', 'textarea', 'password']),
 };
 
 export default FormControl;
