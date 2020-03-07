@@ -1,7 +1,7 @@
 {
   "name": "pattern-library-skeleton",
   "version": "1.0.0",
-  "description": "Design System (Pattern library skeleton)",
+  "description": "A awesome pattern library for your products and experiences!",
   "license": "ISC",
   "author": "Juan Carlos Ruiz <klaufel@gmail.com>",
   "repository": {
@@ -15,8 +15,8 @@
     "tokens": "bin/design-tokens",
     "storybook": "start-storybook -p 9001",
     "storybook:build": "build-storybook -o storybook -c .storybook",
-    "prettier:check": "prettier \"./**/*.{js,mdx,scss}\" --check",
-    "prettier:write": "prettier \"./**/*.{js,mdx,scss}\" --write",
+    "prettier:check": "prettier \"./**/*.{js,mdx}\" --check",
+    "prettier:write": "prettier \"./**/*.{js,mdx}\" --write",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:update": "jest --updateSnapshot",
