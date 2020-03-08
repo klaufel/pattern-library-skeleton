@@ -45,13 +45,8 @@ exports[`FormControl it works default 1`] = `
 }
 
 .c2:focus {
-  border-color: #0069a7;
-  box-shadow: 0 0 5px 0 #0069a7;
-}
-
-.c2::-ms-expand {
-  background-color: transparent;
-  border: 0;
+  border-color: #56a4c9;
+  box-shadow: 0 0 5px 0 #56a4c9;
 }
 
 .c2::-webkit-input-placeholder {
@@ -215,13 +210,8 @@ exports[`FormControl it works with status error 1`] = `
 }
 
 .c2:focus {
-  border-color: #0069a7;
-  box-shadow: 0 0 5px 0 #0069a7;
-}
-
-.c2::-ms-expand {
-  background-color: transparent;
-  border: 0;
+  border-color: #56a4c9;
+  box-shadow: 0 0 5px 0 #56a4c9;
 }
 
 .c2::-webkit-input-placeholder {
@@ -319,7 +309,7 @@ exports[`FormControl it works with status error 1`] = `
 
 .c2,
 .c2:hover {
-  border-color: #bf0019;
+  border-color: #e5363a;
 }
 
 .c0 {
@@ -390,13 +380,8 @@ exports[`FormControl it works with status success 1`] = `
 }
 
 .c2:focus {
-  border-color: #0069a7;
-  box-shadow: 0 0 5px 0 #0069a7;
-}
-
-.c2::-ms-expand {
-  background-color: transparent;
-  border: 0;
+  border-color: #56a4c9;
+  box-shadow: 0 0 5px 0 #56a4c9;
 }
 
 .c2::-webkit-input-placeholder {
@@ -494,7 +479,7 @@ exports[`FormControl it works with status success 1`] = `
 
 .c2,
 .c2:hover {
-  border-color: #118000;
+  border-color: #109c42;
 }
 
 .c0 {

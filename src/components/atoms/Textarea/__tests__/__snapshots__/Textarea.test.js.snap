@@ -45,13 +45,8 @@ exports[`Textarea it works default 1`] = `
 }
 
 .c0:focus {
-  border-color: #0069a7;
-  box-shadow: 0 0 5px 0 #0069a7;
-}
-
-.c0::-ms-expand {
-  background-color: transparent;
-  border: 0;
+  border-color: #56a4c9;
+  box-shadow: 0 0 5px 0 #56a4c9;
 }
 
 .c0::-webkit-input-placeholder {
@@ -149,7 +144,7 @@ exports[`Textarea it works default 1`] = `
 
 .c0,
 .c0:hover {
-  border-color: #118000;
+  border-color: #109c42;
 }
 
 <textarea
@@ -202,13 +197,8 @@ exports[`Textarea it works with status error 1`] = `
 }
 
 .c0:focus {
-  border-color: #0069a7;
-  box-shadow: 0 0 5px 0 #0069a7;
-}
-
-.c0::-ms-expand {
-  background-color: transparent;
-  border: 0;
+  border-color: #56a4c9;
+  box-shadow: 0 0 5px 0 #56a4c9;
 }
 
 .c0::-webkit-input-placeholder {
@@ -306,7 +296,7 @@ exports[`Textarea it works with status error 1`] = `
 
 .c0,
 .c0:hover {
-  border-color: #bf0019;
+  border-color: #e5363a;
 }
 
 <textarea
@@ -359,13 +349,8 @@ exports[`Textarea it works with status success 1`] = `
 }
 
 .c0:focus {
-  border-color: #0069a7;
-  box-shadow: 0 0 5px 0 #0069a7;
-}
-
-.c0::-ms-expand {
-  background-color: transparent;
-  border: 0;
+  border-color: #56a4c9;
+  box-shadow: 0 0 5px 0 #56a4c9;
 }
 
 .c0::-webkit-input-placeholder {
@@ -463,7 +448,7 @@ exports[`Textarea it works with status success 1`] = `
 
 .c0,
 .c0:hover {
-  border-color: #118000;
+  border-color: #109c42;
 }
 
 <textarea
