@@ -14,7 +14,6 @@ const colors = {
     percent80: tokens.colors.neutral80,
   },
   alert: {
-    info: tokens.colors.alertInfo,
     success: tokens.colors.alertSuccess,
     warning: tokens.colors.alertWarning,
     error: tokens.colors.alertError,

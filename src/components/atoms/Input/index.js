@@ -34,14 +34,8 @@ const Input = styled.input`
   }
 
   &:focus {
-    border-color: ${props => props.theme.colors.alert.info};
-    box-shadow: 0 0 5px 0 ${props => props.theme.colors.alert.info};
-  }
-
-  /* Unstyle the caret on 'select's in IE10+. */
-  &::-ms-expand {
-    background-color: transparent;
-    border: 0;
+    border-color: ${props => props.theme.colors.primary.light};
+    box-shadow: 0 0 5px 0 ${props => props.theme.colors.primary.light};
   }
 
   &::placeholder {

@@ -17,6 +17,7 @@
     "storybook:build": "build-storybook -o storybook -c .storybook",
     "prettier:check": "prettier \"./**/*.{js,mdx}\" --check",
     "prettier:write": "prettier \"./**/*.{js,mdx}\" --write",
+    "chromatic": "chromatic --app-code=zstdezwo5wk --build-script-name storybook:build",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:update": "jest --updateSnapshot",
@@ -26,7 +27,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run prettier:write",
-      "pre-push": "npm run test"
+      "pre-push": "npm run test && npm run chromatic"
     }
   },
   "babel": {
