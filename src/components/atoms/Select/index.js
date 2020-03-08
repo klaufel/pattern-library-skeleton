@@ -6,8 +6,7 @@ const Select = styled(Input).attrs({
   as: 'select',
 })`
   cursor: pointer;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFAgMAAAABCpX7AAAACVBMVEWZmZkzMzP///8phUeYAAAAHElEQVQIHWMQDXVgaA1VYFgYsoBhRdAChlVcCwA2FwYo7VMvrgAAAABJRU5ErkJggg==')
-    no-repeat center right ${props => props.theme.spacing.sm};
+  background: red;
 
   /* Unstyle the caret on 'select's in IE10+. */
   &::-ms-expand {

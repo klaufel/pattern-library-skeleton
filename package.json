@@ -27,7 +27,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run prettier:write",
-      "pre-push": "npm run test && npm run chromatic"
+      "pre-push": "npm run test"
     }
   },
   "babel": {

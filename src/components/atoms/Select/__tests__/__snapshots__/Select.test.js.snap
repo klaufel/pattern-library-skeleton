@@ -21,7 +21,7 @@ exports[`Select it works default 1`] = `
   transition: border 0.3s,background-color 0.3s,color 0.3s,box-shadow 0.3s;
   width: 100%;
   cursor: pointer;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFAgMAAAABCpX7AAAACVBMVEWZmZkzMzP///8phUeYAAAAHElEQVQIHWMQDXVgaA1VYFgYsoBhRdAChlVcCwA2FwYo7VMvrgAAAABJRU5ErkJggg==') no-repeat center right 16px;
+  background: red;
 }
 
 .c0,
@@ -168,7 +168,7 @@ exports[`Select it works with options 1`] = `
   transition: border 0.3s,background-color 0.3s,color 0.3s,box-shadow 0.3s;
   width: 100%;
   cursor: pointer;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFAgMAAAABCpX7AAAACVBMVEWZmZkzMzP///8phUeYAAAAHElEQVQIHWMQDXVgaA1VYFgYsoBhRdAChlVcCwA2FwYo7VMvrgAAAABJRU5ErkJggg==') no-repeat center right 16px;
+  background: red;
 }
 
 .c0,
@@ -332,7 +332,7 @@ exports[`Select it works with status error 1`] = `
   background-repeat: no-repeat;
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNBOTAwMTYiIGQ9Ik0yMSAyMmgtMThjLS4zIDAtLjctLjItLjktLjUtLjItLjMtLjItLjcgMC0xbDktMThjLjMtLjcgMS40LS43IDEuOCAwbDkgMThjLjIuMy4xLjcgMCAxLS4yLjMtLjYuNS0uOS41em0tMTYuNC0yaDE0LjhsLTcuNC0xNC44LTcuNCAxNC44ek0xMSAxMGgydjZoLTJ6Ii8+PGNpcmNsZSBmaWxsPSIjQTkwMDE2IiBjeD0iMTIiIGN5PSIxOCIgcj0iMS4zIi8+PC9zdmc+');
   cursor: pointer;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFAgMAAAABCpX7AAAACVBMVEWZmZkzMzP///8phUeYAAAAHElEQVQIHWMQDXVgaA1VYFgYsoBhRdAChlVcCwA2FwYo7VMvrgAAAABJRU5ErkJggg==') no-repeat center right 16px;
+  background: red;
 }
 
 .c0,
@@ -501,7 +501,7 @@ exports[`Select it works with status success 1`] = `
   background-repeat: no-repeat;
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMxMDdCMDAiIGQ9Ik04LjggMTUuOWwtNC4yLTQuMi0xLjQgMS40IDUuNiA1LjYgMTItMTItMS40LTEuNC0xMC42IDEwLjZ6Ii8+PC9zdmc+');
   cursor: pointer;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFAgMAAAABCpX7AAAACVBMVEWZmZkzMzP///8phUeYAAAAHElEQVQIHWMQDXVgaA1VYFgYsoBhRdAChlVcCwA2FwYo7VMvrgAAAABJRU5ErkJggg==') no-repeat center right 16px;
+  background: red;
 }
 
 .c0,
