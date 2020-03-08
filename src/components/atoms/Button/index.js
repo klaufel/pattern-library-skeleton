@@ -12,7 +12,7 @@ const Button = styled.button`
   outline: none;
   border: 1px solid transparent;
   padding: ${props => props.theme.spacing.sm} ${props => props.theme.spacing.md};
-  background-color: ${props => props.theme.colors.primary.main};
+  background-color: ${props => props.theme.colors.primary.light};
   color: ${props => props.theme.colors.neutral.percent00};
   transition: color 0.2s, background-color 0.2s;
 
