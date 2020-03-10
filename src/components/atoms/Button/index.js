@@ -1,7 +1,8 @@
+import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import { css } from 'styled-components';
 
-const Button = styled.button`
+const buttonStyles = css`
   align-items: center;
   border-radius: 4px;
   cursor: pointer;
@@ -50,6 +51,8 @@ const Button = styled.button`
     `}
 `;
 
+const Button = ({disabled, secondary, onClick, children}) => (<button css={buttonStyles} disabled={disabled} secondary={secondary} onClick={onClick && onClick()}>{children}</button>);
+
 Button.displayName = 'Button';
 
 Button.propTypes = {
@@ -57,6 +60,8 @@ Button.propTypes = {
   children: PropTypes.node.isRequired,
   /** This Boolean attribute prevents the user from interacting with the button */
   disabled: PropTypes.bool,
+  /** This Boolean attribute prevents the user from interacting with the button */
+  secondary: PropTypes.bool,
   /** Click event */
   onClick: PropTypes.func,
 };
