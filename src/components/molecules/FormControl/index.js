@@ -7,10 +7,10 @@ import Textarea from '../../atoms/Textarea';
 import Select from '../../atoms/Select';
 
 const Wrapper = styled.div`
-  padding-bottom: ${props => props.theme.spacing.md};
+  padding-bottom: ${(props) => props.theme.spacing.md};
 `;
 
-const inputProps = formType => {
+const inputProps = (formType) => {
   const props = formType !== 'input' && { type: formType };
   if (formType === 'email') {
     const emailProps = {
@@ -22,7 +22,7 @@ const inputProps = formType => {
   return props;
 };
 
-const InputField = props => {
+const InputField = (props) => {
   const { formType } = props;
   return formType === 'textarea' ? (
     <Textarea {...props} />

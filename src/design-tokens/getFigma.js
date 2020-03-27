@@ -17,11 +17,11 @@ const getFigma = (apikey, id, outDir) => {
 
   try {
     fetch(FETCH_URL, FETCH_DATA)
-      .then(response => {
+      .then((response) => {
         console.log(' Connection with Figma is successful...');
         return response.json();
       })
-      .then(response => {
+      .then((response) => {
         try {
           if (response.status) {
             console.log('');
@@ -38,7 +38,7 @@ const getFigma = (apikey, id, outDir) => {
           return error;
         }
       })
-      .then(styles => {
+      .then((styles) => {
         if (styles.status !== 403 && styles.status !== 404) {
           const figmaTreeStructure = styles.document.children[0].children;
 
@@ -52,7 +52,7 @@ const getFigma = (apikey, id, outDir) => {
           Object.assign(baseTokensJSON.spacing, getSpacing('Spacing', figmaTreeStructure));
           Object.assign(baseTokensJSON.typography, getTypography('Typography', figmaTreeStructure));
 
-          fs.writeFile(outDir, JSON.stringify(baseTokensJSON, null, 2), err => {
+          fs.writeFile(outDir, JSON.stringify(baseTokensJSON, null, 2), (err) => {
             if (err) {
               console.error(err);
               return;
@@ -68,7 +68,7 @@ const getFigma = (apikey, id, outDir) => {
           });
         }
       })
-      .catch(error => console.log(error));
+      .catch((error) => console.log(error));
   } catch (err) {
     console.log(err);
   }

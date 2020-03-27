@@ -17,7 +17,7 @@ const Block = styled.div`
 const Background = styled.div`
   width: 158px;
   height: 60px;
-  background: ${props => props.color};
+  background: ${(props) => props.color};
   border: 1px solid #eee;
   display: flex;
   padding: 8px;

@@ -5,7 +5,7 @@ const path = './figma.config.json';
 export function cli(args) {
   //console.log('cli args', args);
 
-  fs.access(path, fs.F_OK, err => {
+  fs.access(path, fs.F_OK, (err) => {
     if (err) {
       console.error('❌');
       console.error('\x1b[31m Config file was not found!');

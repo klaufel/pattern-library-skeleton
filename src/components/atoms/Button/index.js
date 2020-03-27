@@ -7,19 +7,19 @@ const buttonStyles = css`
   border-radius: 4px;
   cursor: pointer;
   display: flex;
-  font-size: ${props => props.theme.typography.body.normal.fontSize};
-  line-height: ${props => props.theme.typography.body.normal.lineHeight};
+  font-size: ${(props) => props.theme.typography.body.normal.fontSize};
+  line-height: ${(props) => props.theme.typography.body.normal.lineHeight};
   font-family: inherit;
   outline: none;
   border: 1px solid transparent;
-  padding: ${props => props.theme.spacing.sm} ${props => props.theme.spacing.md};
-  background-color: ${props => props.theme.colors.primary.main};
-  color: ${props => props.theme.colors.neutral.percent00};
+  padding: ${(props) => props.theme.spacing.sm} ${(props) => props.theme.spacing.md};
+  background-color: ${(props) => props.theme.colors.primary.main};
+  color: ${(props) => props.theme.colors.neutral.percent00};
   transition: color 0.2s, background-color 0.2s;
 
   &:hover,
   &:active {
-    background-color: ${props => props.theme.colors.primary.light};
+    background-color: ${(props) => props.theme.colors.primary.light};
   }
 
   &:disabled {
@@ -27,11 +27,11 @@ const buttonStyles = css`
     opacity: 0.5;
 
     &:hover {
-      background-color: ${props => props.theme.colors.primary.main};
+      background-color: ${(props) => props.theme.colors.primary.main};
     }
   }
 
-  ${props =>
+  ${(props) =>
     props.secondary &&
     css`
       background-color: ${props.theme.colors.neutral.percent00};
@@ -51,7 +51,16 @@ const buttonStyles = css`
     `}
 `;
 
-const Button = ({disabled, secondary, onClick, children}) => (<button css={buttonStyles} disabled={disabled} secondary={secondary} onClick={onClick && onClick()}>{children}</button>);
+const Button = ({ disabled, secondary, onClick, children }) => (
+  <button
+    css={buttonStyles}
+    disabled={disabled}
+    secondary={secondary}
+    onClick={onClick && onClick()}
+  >
+    {children}
+  </button>
+);
 
 Button.displayName = 'Button';
 

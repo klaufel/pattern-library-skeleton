@@ -5,6 +5,6 @@ const Container = styled.div`
   padding: 16px;
 `;
 
-const SBContainer = storyFn => <Container>{storyFn()}</Container>;
+const SBContainer = (storyFn) => <Container>{storyFn()}</Container>;
 
 export default SBContainer;

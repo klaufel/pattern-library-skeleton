@@ -9,9 +9,9 @@ export const Wrapper = styled.div`
 `;
 
 const Text = styled.p`
-  font-size: ${props => (props.fontSize ? props.fontSize : '12px')};
-  line-height: ${props => (props.lineHeight ? props.lineHeight : 'auto')};
-  font-weight: ${props => (props.fontWeight ? props.fontWeight : '400')};
+  font-size: ${(props) => (props.fontSize ? props.fontSize : '12px')};
+  line-height: ${(props) => (props.lineHeight ? props.lineHeight : 'auto')};
+  font-weight: ${(props) => (props.fontWeight ? props.fontWeight : '400')};
 `;
 
 const Name = styled.span`

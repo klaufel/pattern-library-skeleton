@@ -2,11 +2,11 @@ import { camelCase } from './utils';
 
 const getTypography = (layerName, stylesArtboard) => {
   const palette = {};
-  const paletteArtboard = stylesArtboard.filter(item => {
+  const paletteArtboard = stylesArtboard.filter((item) => {
     return item.name === layerName;
   })[0].children;
 
-  paletteArtboard.map(item => {
+  paletteArtboard.map((item) => {
     if (item.type === 'COMPONENT') {
       const { name } = item;
       const { fontFamily, fontSize, lineHeightPx, fontWeight } = item.children[0].style;

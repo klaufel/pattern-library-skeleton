@@ -26,9 +26,9 @@ const Block = styled.div`
 `;
 
 const Grid = styled.div`
-  width: ${props => props.size};
-  height: ${props => props.size};
-  background: ${props => props.theme.colors.neutral.percent80};
+  width: ${(props) => props.size};
+  height: ${(props) => props.size};
+  background: ${(props) => props.theme.colors.neutral.percent80};
   margin-bottom: 8px;
 `;
 

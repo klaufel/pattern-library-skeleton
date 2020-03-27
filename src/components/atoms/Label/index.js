@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 const Label = styled.label`
   display: block;
-  font-size: ${props => props.theme.typography.body.normal.fontSize};
-  line-height: ${props => props.theme.typography.body.normal.lineHeight};
-  padding-bottom: ${props => props.theme.spacing.xxs};
+  font-size: ${(props) => props.theme.typography.body.normal.fontSize};
+  line-height: ${(props) => props.theme.typography.body.normal.lineHeight};
+  padding-bottom: ${(props) => props.theme.spacing.xxs};
 `;
 
 Label.propTypes = {
