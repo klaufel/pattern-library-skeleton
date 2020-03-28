@@ -18,7 +18,7 @@ exports[`Button it works default 1`] = `
   outline: none;
   border: 1px solid transparent;
   padding: 16px 24px;
-  background-color: #b8255a;
+  background-color: #2587b8;
   color: #ffffff;
   -webkit-transition: color 0.2s,background-color 0.2s;
   transition: color 0.2s,background-color 0.2s;
@@ -35,7 +35,7 @@ exports[`Button it works default 1`] = `
 }
 
 .c0:disabled:hover {
-  background-color: #b8255a;
+  background-color: #2587b8;
 }
 
 <button
@@ -63,7 +63,7 @@ exports[`Button it works disabled 1`] = `
   outline: none;
   border: 1px solid transparent;
   padding: 16px 24px;
-  background-color: #b8255a;
+  background-color: #2587b8;
   color: #ffffff;
   -webkit-transition: color 0.2s,background-color 0.2s;
   transition: color 0.2s,background-color 0.2s;
@@ -80,7 +80,7 @@ exports[`Button it works disabled 1`] = `
 }
 
 .c0:disabled:hover {
-  background-color: #b8255a;
+  background-color: #2587b8;
 }
 
 <button
@@ -109,7 +109,7 @@ exports[`Button it works with onClick event 1`] = `
   outline: none;
   border: 1px solid transparent;
   padding: 16px 24px;
-  background-color: #b8255a;
+  background-color: #2587b8;
   color: #ffffff;
   -webkit-transition: color 0.2s,background-color 0.2s;
   transition: color 0.2s,background-color 0.2s;
@@ -126,7 +126,7 @@ exports[`Button it works with onClick event 1`] = `
 }
 
 .c0:disabled:hover {
-  background-color: #b8255a;
+  background-color: #2587b8;
 }
 
 <button
@@ -154,7 +154,7 @@ exports[`Button it works with secondary and disabled variation 1`] = `
   outline: none;
   border: 1px solid transparent;
   padding: 16px 24px;
-  background-color: #b8255a;
+  background-color: #2587b8;
   color: #ffffff;
   -webkit-transition: color 0.2s,background-color 0.2s;
   transition: color 0.2s,background-color 0.2s;
@@ -174,7 +174,7 @@ exports[`Button it works with secondary and disabled variation 1`] = `
 }
 
 .c0:disabled:hover {
-  background-color: #b8255a;
+  background-color: #2587b8;
 }
 
 .c0:hover,
@@ -212,7 +212,7 @@ exports[`Button it works with secondary variation 1`] = `
   outline: none;
   border: 1px solid transparent;
   padding: 16px 24px;
-  background-color: #b8255a;
+  background-color: #2587b8;
   color: #ffffff;
   -webkit-transition: color 0.2s,background-color 0.2s;
   transition: color 0.2s,background-color 0.2s;
@@ -232,7 +232,7 @@ exports[`Button it works with secondary variation 1`] = `
 }
 
 .c0:disabled:hover {
-  background-color: #b8255a;
+  background-color: #2587b8;
 }
 
 .c0:hover,
