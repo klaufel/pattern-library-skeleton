@@ -16,7 +16,7 @@
       "value": "#f2f2f2"
     },
     "neutral20": {
-      "value": "#cccccc"
+      "value": "#8e8e98"
     },
     "neutral40": {
       "value": "#999999"
@@ -25,13 +25,13 @@
       "value": "#333333"
     },
     "primaryDark": {
-      "value": "#1d698f"
+      "value": "#252525"
     },
     "primaryMain": {
-      "value": "#2587b8"
+      "value": "#111111"
     },
     "primaryLight": {
-      "value": "#56a4c9"
+      "value": "#dcdcdc"
     }
   }
 }
