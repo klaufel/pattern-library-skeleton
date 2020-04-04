@@ -38,11 +38,9 @@ const Typography = ({ typos }) => (
     <GlobalStyle />
     <Wrapper>
       {Object.values(typos).map((item, index) => {
-        console.log(item);
         const typoNames = Object.keys(typos);
-
         return (
-          <Block>
+          <Block key={index}>
             <Name>{typoNames[index]}</Name>
             <Text
               fontSize={item.fontSize}

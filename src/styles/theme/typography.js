@@ -1,4 +1,4 @@
-import tokens from './tokens';
+import tokens from '../../../tokens/typography';
 
 const typography = {
   global: {
@@ -6,25 +6,25 @@ const typography = {
   },
   heading: {
     big: {
-      fontSize: tokens.typography.headingBig.fontSize,
-      lineHeight: tokens.typography.headingBig.lineHeight,
-      fontWeight: tokens.typography.headingBig.fontWeight,
+      fontSize: tokens.typography.headingBig.fontSize.value,
+      lineHeight: tokens.typography.headingBig.lineHeight.value,
+      fontWeight: tokens.typography.headingBig.fontWeight.value,
     },
     normal: {
-      fontSize: tokens.typography.headingNormal.fontSize,
-      lineHeight: tokens.typography.headingNormal.lineHeight,
-      fontWeight: tokens.typography.headingNormal.fontWeight,
+      fontSize: tokens.typography.headingNormal.fontSize.value,
+      lineHeight: tokens.typography.headingNormal.lineHeight.value,
+      fontWeight: tokens.typography.headingNormal.fontWeight.value,
     },
     small: {
-      fontSize: tokens.typography.headingSmall.fontSize,
-      lineHeight: tokens.typography.headingSmall.lineHeight,
-      fontWeight: tokens.typography.headingSmall.fontWeight,
+      fontSize: tokens.typography.headingSmall.fontSize.value,
+      lineHeight: tokens.typography.headingSmall.lineHeight.value,
+      fontWeight: tokens.typography.headingSmall.fontWeight.value,
     },
   },
   body: {
     normal: {
-      fontSize: tokens.typography.bodyNormal.fontSize,
-      lineHeight: tokens.typography.bodyNormal.lineHeight,
+      fontSize: tokens.typography.bodyNormal.fontSize.value,
+      lineHeight: tokens.typography.bodyNormal.lineHeight.value,
     },
   },
 };

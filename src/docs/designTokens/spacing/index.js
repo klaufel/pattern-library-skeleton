@@ -39,7 +39,7 @@ const Spacing = ({ spaces }) => (
       {Object.values(spaces).map((item, index) => {
         const spaceName = Object.keys(spaces);
         return (
-          <Block>
+          <Block key={index}>
             <Name>
               {spaceName[index]} / {item}
             </Name>

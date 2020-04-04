@@ -37,7 +37,7 @@ const Colors = ({ colors }) => (
       {Object.values(colors).map((item, index) => {
         const colorNames = Object.keys(colors);
         return (
-          <Block>
+          <Block key={index}>
             <Background key={item} color={item} />
             <Info>
               {colorNames[index]} / {item}

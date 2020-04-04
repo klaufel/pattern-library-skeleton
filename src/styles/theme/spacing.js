@@ -1,13 +1,13 @@
-import tokens from './tokens';
+import tokens from '../../../tokens/spacing';
 
 const spacing = {
-  xxs: tokens.spacing.xxs,
-  xs: tokens.spacing.xs,
-  sm: tokens.spacing.sm,
-  md: tokens.spacing.md,
-  lg: tokens.spacing.lg,
-  xl: tokens.spacing.xl,
-  xxl: tokens.spacing.xxl,
+  xxs: tokens.spacing.xxs.value,
+  xs: tokens.spacing.xs.value,
+  sm: tokens.spacing.sm.value,
+  md: tokens.spacing.md.value,
+  lg: tokens.spacing.lg.value,
+  xl: tokens.spacing.xl.value,
+  xxl: tokens.spacing.xxl.value,
 };
 
 export default spacing;

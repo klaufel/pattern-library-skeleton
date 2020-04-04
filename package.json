@@ -12,7 +12,9 @@
     "design-tokens": "bin/design-tokens"
   },
   "scripts": {
-    "tokens": "bin/design-tokens",
+    "tokens": "npm run tokens:figma && npm run tokens:dictionary",
+    "tokens:figma": "bin/design-tokens",
+    "tokens:dictionary": "rm -rf build && style-dictionary build",
     "storybook": "start-storybook -p 9001",
     "storybook:build": "build-storybook -o storybook -c .storybook",
     "prettier:check": "prettier \"./**/*.{js,mdx}\" --check",
@@ -76,7 +78,8 @@
     "jest-styled-components": "^7.0.0",
     "node-fetch": "^2.6.0",
     "prettier": "^2.0.2",
-    "storybook-chromatic": "^3.5.2"
+    "storybook-chromatic": "^3.5.2",
+    "style-dictionary": "^2.8.3"
   },
   "dependencies": {
     "react": "^16.13.1",

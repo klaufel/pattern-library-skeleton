@@ -1,22 +1,22 @@
-import tokens from './tokens';
+import tokens from '../../../tokens/color';
 
 const colors = {
   primary: {
-    light: tokens.colors.primaryLight,
-    main: tokens.colors.primaryMain,
-    dark: tokens.colors.primaryDark,
+    light: tokens.color.primaryLight.value,
+    main: tokens.color.primaryMain.value,
+    dark: tokens.color.primaryDark.value,
   },
   neutral: {
-    percent00: tokens.colors.neutral00,
-    percent05: tokens.colors.neutral05,
-    percent20: tokens.colors.neutral20,
-    percent40: tokens.colors.neutral40,
-    percent80: tokens.colors.neutral80,
+    percent00: tokens.color.neutral00.value,
+    percent05: tokens.color.neutral05.value,
+    percent20: tokens.color.neutral20.value,
+    percent40: tokens.color.neutral40.value,
+    percent80: tokens.color.neutral80.value,
   },
   alert: {
-    success: tokens.colors.alertSuccess,
-    warning: tokens.colors.alertWarning,
-    error: tokens.colors.alertError,
+    success: tokens.color.alertSuccess.value,
+    warning: tokens.color.alertWarning.value,
+    error: tokens.color.alertError.value,
   },
 };
 
