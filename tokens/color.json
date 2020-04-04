@@ -1,0 +1,37 @@
+{
+  "color": {
+    "alertWarning": {
+      "value": "#ffa90d"
+    },
+    "alertError": {
+      "value": "#e5363a"
+    },
+    "alertSuccess": {
+      "value": "#109c42"
+    },
+    "neutral00": {
+      "value": "#ffffff"
+    },
+    "neutral05": {
+      "value": "#f2f2f2"
+    },
+    "neutral20": {
+      "value": "#cccccc"
+    },
+    "neutral40": {
+      "value": "#999999"
+    },
+    "neutral80": {
+      "value": "#333333"
+    },
+    "primaryDark": {
+      "value": "#1d698f"
+    },
+    "primaryMain": {
+      "value": "#2587b8"
+    },
+    "primaryLight": {
+      "value": "#56a4c9"
+    }
+  }
+}

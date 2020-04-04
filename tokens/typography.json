@@ -1,0 +1,60 @@
+{
+  "typography": {
+    "headingBig": {
+      "fontFamily": {
+        "value": "'Open Sans'"
+      },
+      "fontSize": {
+        "value": "28px"
+      },
+      "lineHeight": {
+        "value": "32px"
+      },
+      "fontWeight": {
+        "value": 700
+      }
+    },
+    "headingNormal": {
+      "fontFamily": {
+        "value": "'Open Sans'"
+      },
+      "fontSize": {
+        "value": "24px"
+      },
+      "lineHeight": {
+        "value": "28px"
+      },
+      "fontWeight": {
+        "value": 700
+      }
+    },
+    "headingSmall": {
+      "fontFamily": {
+        "value": "'Open Sans'"
+      },
+      "fontSize": {
+        "value": "18px"
+      },
+      "lineHeight": {
+        "value": "21px"
+      },
+      "fontWeight": {
+        "value": 700
+      }
+    },
+    "bodyNormal": {
+      "fontFamily": {
+        "value": "'Open Sans'"
+      },
+      "fontSize": {
+        "value": "14px"
+      },
+      "lineHeight": {
+        "value": "16px"
+      },
+      "fontWeight": {
+        "value": 400
+      }
+    }
+  }
+}
