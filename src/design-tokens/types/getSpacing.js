@@ -1,7 +1,7 @@
-import { camelCase } from './utils';
+import { camelCase } from '../utils';
 
 const getSpacing = (layerName, stylesArtboard) => {
-  const palette = {};
+  const palette = { spacing: {} };
   const paletteArtboard = stylesArtboard.filter((item) => {
     return item.name === layerName;
   })[0].children;
@@ -10,9 +10,9 @@ const getSpacing = (layerName, stylesArtboard) => {
     if (item.type === 'COMPONENT') {
       const { name, absoluteBoundingBox } = item;
       const spacingObj = {
-        [camelCase(name)]: `${absoluteBoundingBox.width}px`,
+        [camelCase(name)]: { value: `${absoluteBoundingBox.width}px` },
       };
-      Object.assign(palette, spacingObj);
+      Object.assign(palette.spacing, spacingObj);
     }
     return null;
   });

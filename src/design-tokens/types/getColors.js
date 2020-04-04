@@ -1,25 +1,19 @@
-import { camelCase } from './utils';
+import { camelCase } from '../utils';
 
 const trim = (str) => str.replace(/^\s+|\s+$/gm, '');
 
 const rgbaGen = (r, g, b, a) => {
-  const getColor = (color) => {
-    return Math.round(color * 255);
-  };
+  const getColor = (color) => Math.round(color * 255);
   return `rgba(${getColor(r)}, ${getColor(g)}, ${getColor(b)}, ${a})`;
 };
 
 const rgbaGenObject = (r, g, b, a) => {
-  const getColor = (color) => {
-    return Math.round(color * 255);
-  };
+  const getColor = (color) => Math.round(color * 255);
   return { r: getColor(r), g: getColor(g), b: getColor(b), a: a };
 };
 
 const rgbGen = (r, g, b) => {
-  const getColor = (color) => {
-    return Math.round(color * 255);
-  };
+  const getColor = (color) => Math.round(color * 255);
   return `rgba(${getColor(r)}, ${getColor(g)}, ${getColor(b)})`;
 };
 
@@ -39,7 +33,7 @@ const fullColorHex = (r, g, b) => {
 };
 
 const getColors = (layerName, stylesArtboard) => {
-  const palette = {};
+  const palette = { color: {} };
   const paletteArtboard = stylesArtboard.filter((item) => {
     return item.name === layerName;
   })[0].children;
@@ -49,10 +43,12 @@ const getColors = (layerName, stylesArtboard) => {
       const { r, g, b, a } = item.children[0].fills[0].color;
       const colorRGBA = rgbaGenObject(r, g, b, a);
       const colorObj = {
-        [camelCase(item.name)]: `${fullColorHex(colorRGBA.r, colorRGBA.g, colorRGBA.b)}`,
+        [camelCase(item.name)]: {
+          value: `${fullColorHex(colorRGBA.r, colorRGBA.g, colorRGBA.b)}`,
+        },
       };
 
-      Object.assign(palette, colorObj);
+      Object.assign(palette.color, colorObj);
     }
     return null;
   });

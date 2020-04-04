@@ -1,10 +1,8 @@
 import fs from 'fs';
-import getFigma from './getFigma';
+import getFigma from './execute';
 const path = './figma.config.json';
 
 export function cli(args) {
-  //console.log('cli args', args);
-
   fs.access(path, fs.F_OK, (err) => {
     if (err) {
       console.error('❌');
@@ -15,7 +13,6 @@ export function cli(args) {
     fs.readFile(path, 'utf8', (err, data) => {
       if (err) throw err;
       const obj = JSON.parse(data);
-
       if (!obj.FIGMA_APIKEY) {
         return console.log('❌  No Figma API Key found');
       } else if (!obj.FIGMA_ID) {

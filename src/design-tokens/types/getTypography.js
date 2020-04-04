@@ -1,7 +1,7 @@
-import { camelCase } from './utils';
+import { camelCase } from '../utils';
 
 const getTypography = (layerName, stylesArtboard) => {
-  const palette = {};
+  const palette = { typography: {} };
   const paletteArtboard = stylesArtboard.filter((item) => {
     return item.name === layerName;
   })[0].children;
@@ -13,13 +13,13 @@ const getTypography = (layerName, stylesArtboard) => {
 
       const typographyObj = {
         [camelCase(name)]: {
-          fontFamily: fontFamily,
-          fontSize: `${fontSize}px`,
-          lineHeight: `${Math.floor(lineHeightPx)}px`,
-          fontWeight: fontWeight,
+          fontFamily: { value: `'${fontFamily}'` },
+          fontSize: { value: `${fontSize}px` },
+          lineHeight: { value: `${Math.floor(lineHeightPx)}px` },
+          fontWeight: { value: fontWeight },
         },
       };
-      Object.assign(palette, typographyObj);
+      Object.assign(palette.typography, typographyObj);
     }
     return null;
   });
