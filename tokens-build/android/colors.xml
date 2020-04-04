@@ -2,7 +2,7 @@
 
 <!--
   Do not edit directly
-  Generated on Sat, 04 Apr 2020 12:33:26 GMT
+  Generated on Sat, 04 Apr 2020 14:51:01 GMT
 -->
 <resources>
   <color name="color_alert_warning">#ffffa90d</color>
@@ -10,11 +10,11 @@
   <color name="color_alert_success">#ff109c42</color>
   <color name="color_neutral_00">#ffffffff</color>
   <color name="color_neutral_05">#fff2f2f2</color>
-  <color name="color_neutral_20">#ff8e8e98</color>
+  <color name="color_neutral_20">#ffcccccc</color>
   <color name="color_neutral_40">#ff999999</color>
   <color name="color_neutral_80">#ff333333</color>
-  <color name="color_primary_dark">#ff252525</color>
-  <color name="color_primary_main">#ff111111</color>
-  <color name="color_primary_light">#ffdcdcdc</color>
+  <color name="color_primary_dark">#ff1d698f</color>
+  <color name="color_primary_main">#ff2587b8</color>
+  <color name="color_primary_light">#ff56a4c9</color>
   
 </resources>

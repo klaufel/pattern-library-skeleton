@@ -3,7 +3,7 @@
 // StyleDictionary.swift
 //
 // Do not edit directly
-// Generated on Sat, 04 Apr 2020 12:33:26 GMT
+// Generated on Sat, 04 Apr 2020 14:51:01 GMT
 //
 
 
@@ -15,12 +15,12 @@ public class StyleDictionary {
     public static let colorAlertWarning = UIColor(red: 1.000, green: 0.663, blue: 0.051, alpha:1)
     public static let colorNeutral00 = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha:1)
     public static let colorNeutral05 = UIColor(red: 0.949, green: 0.949, blue: 0.949, alpha:1)
-    public static let colorNeutral20 = UIColor(red: 0.557, green: 0.557, blue: 0.596, alpha:1)
+    public static let colorNeutral20 = UIColor(red: 0.800, green: 0.800, blue: 0.800, alpha:1)
     public static let colorNeutral40 = UIColor(red: 0.600, green: 0.600, blue: 0.600, alpha:1)
     public static let colorNeutral80 = UIColor(red: 0.200, green: 0.200, blue: 0.200, alpha:1)
-    public static let colorPrimaryDark = UIColor(red: 0.145, green: 0.145, blue: 0.145, alpha:1)
-    public static let colorPrimaryLight = UIColor(red: 0.863, green: 0.863, blue: 0.863, alpha:1)
-    public static let colorPrimaryMain = UIColor(red: 0.067, green: 0.067, blue: 0.067, alpha:1)
+    public static let colorPrimaryDark = UIColor(red: 0.114, green: 0.412, blue: 0.561, alpha:1)
+    public static let colorPrimaryLight = UIColor(red: 0.337, green: 0.643, blue: 0.788, alpha:1)
+    public static let colorPrimaryMain = UIColor(red: 0.145, green: 0.529, blue: 0.722, alpha:1)
     public static let spacingLg = 32px
     public static let spacingMd = 24px
     public static let spacingSm = 16px
