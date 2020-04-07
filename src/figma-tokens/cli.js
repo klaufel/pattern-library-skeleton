@@ -1,8 +1,8 @@
-import fs from 'fs';
+import fs from 'file-system';
 import getFigma from './execute';
 const path = './figma.config.json';
 
-export function cli(args) {
+export function cli() {
   fs.access(path, fs.F_OK, (err) => {
     if (err) {
       console.error('❌');
@@ -12,16 +12,18 @@ export function cli(args) {
     }
     fs.readFile(path, 'utf8', (err, data) => {
       if (err) throw err;
-      const obj = JSON.parse(data);
-      if (!obj.FIGMA_APIKEY) {
+      const { FIGMA_APIKEY, FIGMA_ID } = JSON.parse(data);
+      const FIGMA_OUTDIR = 'tokens/json';
+      if (!FIGMA_APIKEY) {
         return console.log('❌  No Figma API Key found');
-      } else if (!obj.FIGMA_ID) {
+      } else if (!FIGMA_ID) {
         return console.log('❌  No Figma ID found');
       } else {
-        if (!obj.FIGMA_OUTDIR) {
-          console.log('⚠️ No outdir found, default outdir is `./tokens.json`');
-        }
-        getFigma(obj.FIGMA_APIKEY, obj.FIGMA_ID, obj.FIGMA_OUTDIR || './tokens.json');
+        if (!FIGMA_OUTDIR) console.log('⚠️ No outdir found, default outdir is `./tokens.json`');
+        fs.mkdir(FIGMA_OUTDIR, null, (err) => {
+          if (err) throw err;
+          getFigma(FIGMA_APIKEY, FIGMA_ID, FIGMA_OUTDIR);
+        });
       }
     });
   });

@@ -3,7 +3,7 @@
   "platforms": {
     "scss": {
       "transformGroup": "scss",
-      "buildPath": "tokens-build/scss/",
+      "buildPath": "tokens/scss/",
       "files": [
         {
           "destination": "_variables.scss",
@@ -13,7 +13,7 @@
     },
     "android": {
       "transformGroup": "android",
-      "buildPath": "tokens-build/android/",
+      "buildPath": "tokens/android/",
       "files": [
         {
           "destination": "font_dimens.xml",
@@ -27,13 +27,13 @@
     },
     "ios": {
       "transformGroup": "ios",
-      "buildPath": "tokens-build/ios/",
+      "buildPath": "tokens/ios/",
       "files": [
         {
-          "destination": "StyleDictionaryColor.h",
+          "destination": "TokensColor.h",
           "format": "ios/colors.h",
-          "className": "StyleDictionaryColor",
-          "type": "StyleDictionaryColorName",
+          "className": "TokensColor",
+          "type": "TokensColorName",
           "filter": {
             "attributes": {
               "category": "color"
@@ -41,10 +41,10 @@
           }
         },
         {
-          "destination": "StyleDictionaryColor.m",
+          "destination": "TokensColor.m",
           "format": "ios/colors.m",
-          "className": "StyleDictionaryColor",
-          "type": "StyleDictionaryColorName",
+          "className": "TokensColor",
+          "type": "TokensColorName",
           "filter": {
             "attributes": {
               "category": "color"
@@ -52,24 +52,24 @@
           }
         },
         {
-          "destination": "StyleDictionarySize.h",
+          "destination": "TokensSpacing.h",
           "format": "ios/static.h",
-          "className": "StyleDictionarySize",
+          "className": "TokensSpacing",
           "type": "float",
           "filter": {
             "attributes": {
-              "category": "size"
+              "category": "spacing"
             }
           }
         },
         {
-          "destination": "StyleDictionarySize.m",
+          "destination": "TokensSpacing.m",
           "format": "ios/static.m",
-          "className": "StyleDictionarySize",
+          "className": "TokensSpacing",
           "type": "float",
           "filter": {
             "attributes": {
-              "category": "size"
+              "category": "spacing"
             }
           }
         }
@@ -77,24 +77,24 @@
     },
     "ios-swift": {
       "transformGroup": "ios-swift",
-      "buildPath": "tokens-build/ios-swift/",
+      "buildPath": "tokens/ios-swift/",
       "files": [
         {
-          "destination": "StyleDictionary.swift",
+          "destination": "Tokens.swift",
           "format": "ios-swift/class.swift",
-          "className": "StyleDictionary",
+          "className": "Tokens",
           "filter": {}
         }
       ]
     },
     "ios-swift-separate-enums": {
       "transformGroup": "ios-swift-separate",
-      "buildPath": "tokens-build/ios-swift/",
+      "buildPath": "tokens/ios-swift/",
       "files": [
         {
-          "destination": "StyleDictionaryColor.swift",
+          "destination": "TokensColor.swift",
           "format": "ios-swift/enum.swift",
-          "className": "StyleDictionaryColor",
+          "className": "TokensColor",
           "filter": {
             "attributes": {
               "category": "color"
@@ -102,13 +102,13 @@
           }
         },
         {
-          "destination": "StyleDictionarySize.swift",
+          "destination": "TokensSpacing.swift",
           "format": "ios-swift/enum.swift",
-          "className": "StyleDictionarySize",
+          "className": "TokensSpacing",
           "type": "float",
           "filter": {
             "attributes": {
-              "category": "size"
+              "category": "spacing"
             }
           }
         }

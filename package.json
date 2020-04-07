@@ -8,13 +8,10 @@
     "type": "git",
     "url": "git+https://github.com/klaufel/pattern-library-skeleton.git"
   },
-  "bin": {
-    "design-tokens": "bin/design-tokens"
-  },
   "scripts": {
-    "tokens": "npm run tokens:figma && npm run tokens:build",
-    "tokens:figma": "bin/design-tokens",
-    "tokens:build": "rm -rf build && style-dictionary build",
+    "tokens": "npm run tokens:api && npm run tokens:build",
+    "tokens:api": "bin/figma-tokens",
+    "tokens:build": "style-dictionary build",
     "storybook": "start-storybook -p 9001",
     "storybook:build": "build-storybook -o storybook -c .storybook",
     "prettier:check": "prettier \"./**/*.{js,mdx}\" --check",
@@ -72,7 +69,7 @@
     "eslint-plugin-react-hooks": "^3.0.0",
     "eslint-plugin-standard": "^4.0.1",
     "esm": "^3.2.25",
-    "fs": "0.0.2",
+    "file-system": "^2.2.2",
     "husky": "^4.2.3",
     "jest": "^25.2.7",
     "jest-styled-components": "^7.0.0",
