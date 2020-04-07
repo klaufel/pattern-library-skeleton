@@ -1,4 +1,4 @@
-import tokens from '../../../tokens/typography';
+import tokens from '../../../tokens/json/typography';
 
 const typography = {
   global: {

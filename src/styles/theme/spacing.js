@@ -1,4 +1,4 @@
-import tokens from '../../../tokens/spacing';
+import tokens from '../../../tokens/json/spacing';
 
 const spacing = {
   xxs: tokens.spacing.xxs.value,

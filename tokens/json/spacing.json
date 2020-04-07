@@ -1,0 +1,25 @@
+{
+  "spacing": {
+    "xxl": {
+      "value": "48px"
+    },
+    "xl": {
+      "value": "40px"
+    },
+    "lg": {
+      "value": "32px"
+    },
+    "md": {
+      "value": "24px"
+    },
+    "sm": {
+      "value": "16px"
+    },
+    "xs": {
+      "value": "8px"
+    },
+    "xxs": {
+      "value": "4px"
+    }
+  }
+}

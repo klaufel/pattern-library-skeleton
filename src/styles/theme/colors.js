@@ -1,4 +1,4 @@
-import tokens from '../../../tokens/color';
+import tokens from '../../../tokens/json/color';
 
 const colors = {
   primary: {
