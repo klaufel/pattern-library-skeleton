@@ -1,35 +1,35 @@
-import React from 'react';
-import 'jest-styled-components';
-import { render } from '@testing-library/react';
-import { ThemeProvider } from 'styled-components';
-import theme from '../../../../styles/theme';
-import FormControl from '..';
+import React from 'react'
+import 'jest-styled-components'
+import {render} from '@testing-library/react'
+import {ThemeProvider} from 'styled-components'
+import theme from '../../../../styles/theme'
+import FormControl from '..'
 
 describe('FormControl', () => {
   test('it works default', () => {
-    const { container } = render(
+    const {container} = render(
       <ThemeProvider theme={theme}>
-        <FormControl label='Default label' />
+        <FormControl label="Default label" />
       </ThemeProvider>
-    );
-    expect(container.firstChild).toMatchSnapshot();
-  });
+    )
+    expect(container.firstChild).toMatchSnapshot()
+  })
 
   test('it works with status success', () => {
-    const { container } = render(
+    const {container} = render(
       <ThemeProvider theme={theme}>
-        <FormControl label='Default label' status='success' />
+        <FormControl label="Default label" status="success" />
       </ThemeProvider>
-    );
-    expect(container.firstChild).toMatchSnapshot();
-  });
+    )
+    expect(container.firstChild).toMatchSnapshot()
+  })
 
   test('it works with status error', () => {
-    const { container } = render(
+    const {container} = render(
       <ThemeProvider theme={theme}>
-        <FormControl label='Default label' status='error' />
+        <FormControl label="Default label" status="error" />
       </ThemeProvider>
-    );
-    expect(container.firstChild).toMatchSnapshot();
-  });
-});
+    )
+    expect(container.firstChild).toMatchSnapshot()
+  })
+})

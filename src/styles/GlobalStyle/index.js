@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import {createGlobalStyle} from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
 
@@ -460,10 +460,10 @@ const GlobalStyle = createGlobalStyle`
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: ${(props) => props.theme.typography.global.family}, sans-serif;
+    font-family: ${props => props.theme.typography.global.family}, sans-serif;
     margin: 0;
     padding: 0;
-    background: ${(props) => props.theme.colors.neutral.percent00};
+    background: ${props => props.theme.colors.neutral.percent00};
   }
 
   * {
@@ -487,16 +487,16 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p + p {
-    margin-top: ${(props) => props.theme.spacing.xxs};
+    margin-top: ${props => props.theme.spacing.xxs};
   }
   
   a {
     transition: color .3s;
 
     &:hover {
-      color: ${(props) => props.theme.colors.primary.dark};
+      color: ${props => props.theme.colors.primary.dark};
     }
   }
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle

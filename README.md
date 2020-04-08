@@ -1,4 +1,3 @@
-
 <h1 align="center">
   <br><br>
    👋 Welcome to Pattern Library Skeleton!
@@ -6,7 +5,6 @@
 </h1>
 
 <h4 align="center">A awesome design system for your products and experiences!</h4>
-
 
 **Figma design:** [https://www.figma.com/file/IGr2xoqcZX91CU7CDr4ZsI](https://www.figma.com/file/IGr2xoqcZX91CU7CDr4ZsI)
 

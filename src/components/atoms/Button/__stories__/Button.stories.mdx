@@ -1,24 +1,24 @@
-import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
-import { text, boolean } from '@storybook/addon-knobs';
-import Button from '..';
+import {Meta, Props, Story, Preview} from '@storybook/addon-docs/blocks'
+import {text, boolean} from '@storybook/addon-knobs'
+import Button from '..'
 
 export const knobsProps = () => ({
   children: text('text', 'Default button'),
   secondary: boolean('secondary', false),
-  disabled: boolean('disabled', false),
-});
+  disabled: boolean('disabled', false)
+})
 
-<Meta title='Atoms/Button' component={Button} />
+<Meta title="Atoms/Button" component={Button} />
 
 # Button
 
 The `Button` usually act as the main call to action for the users, focusing their attention on what they need to do at each moment.
 
 <Preview>
-  <Story name='Default'>
+  <Story name="Default">
     <Button>Default button</Button>
   </Story>
-  <Story name='Secondary'>
+  <Story name="Secondary">
     <Button secondary>Secondary button</Button>
   </Story>
 </Preview>
@@ -32,10 +32,10 @@ The `Button` usually act as the main call to action for the users, focusing thei
 ### Disabled
 
 <Preview>
-  <Story name='Default disabled'>
+  <Story name="Default disabled">
     <Button disabled>Default button</Button>
   </Story>
-  <Story name='Secondary disabled'>
+  <Story name="Secondary disabled">
     <Button secondary disabled>
       Secondary button
     </Button>
@@ -45,7 +45,7 @@ The `Button` usually act as the main call to action for the users, focusing thei
 ## Knobs
 
 <Preview>
-  <Story name='Knobs'>
+  <Story name="Knobs">
     <Button {...knobsProps()} />
   </Story>
 </Preview>

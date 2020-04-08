@@ -1,20 +1,24 @@
-import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
-import { text, boolean, select } from '@storybook/addon-knobs';
-import Select from '..';
+import {Meta, Props, Story, Preview} from '@storybook/addon-docs/blocks'
+import {text, boolean, select} from '@storybook/addon-knobs'
+import Select from '..'
 
 export const knobsProps = () => ({
   disabled: boolean('disabled', false),
-  status: select('status', { default: '', success: 'success', error: 'error' }, ''),
-});
+  status: select(
+    'status',
+    {default: '', success: 'success', error: 'error'},
+    ''
+  )
+})
 
-<Meta title='Atoms/Select' component={Select} />
+<Meta title="Atoms/Select" component={Select} />
 
 # Select
 
 The `Select`
 
 <Preview>
-  <Story name='Default'>
+  <Story name="Default">
     <Select>
       <option>Option 1</option>
       <option>Option 2</option>
@@ -33,7 +37,7 @@ The `Select`
 ### Disabled
 
 <Preview>
-  <Story name='Disabled'>
+  <Story name="Disabled">
     <Select disabled>
       <option>Option 1</option>
       <option>Option 2</option>
@@ -46,16 +50,16 @@ The `Select`
 ### Status
 
 <Preview>
-  <Story name='Status success'>
-    <Select status='success'>
+  <Story name="Status success">
+    <Select status="success">
       <option>Option 1</option>
       <option>Option 2</option>
       <option>Option 3</option>
       <option>Option 4</option>
     </Select>
   </Story>
-  <Story name='Status error'>
-    <Select status='error'>
+  <Story name="Status error">
+    <Select status="error">
       <option>Option 1</option>
       <option>Option 2</option>
       <option>Option 3</option>
@@ -67,7 +71,7 @@ The `Select`
 ## Knobs
 
 <Preview>
-  <Story name='Knobs'>
+  <Story name="Knobs">
     <Select {...knobsProps()}>
       <option>Option 1</option>
       <option>Option 2</option>

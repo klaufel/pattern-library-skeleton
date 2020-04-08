@@ -1,4 +1,4 @@
-import tokens from '../../../tokens/json/spacing';
+import tokens from '../../../tokens/json/spacing'
 
 const spacing = {
   xxs: tokens.spacing.xxs.value,
@@ -7,7 +7,7 @@ const spacing = {
   md: tokens.spacing.md.value,
   lg: tokens.spacing.lg.value,
   xl: tokens.spacing.xl.value,
-  xxl: tokens.spacing.xxl.value,
-};
+  xxl: tokens.spacing.xxl.value
+}
 
-export default spacing;
+export default spacing

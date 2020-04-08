@@ -1,19 +1,19 @@
-import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
-import { text } from '@storybook/addon-knobs';
-import Label from '..';
+import {Meta, Props, Story, Preview} from '@storybook/addon-docs/blocks'
+import {text} from '@storybook/addon-knobs'
+import Label from '..'
 
 export const knobsProps = () => ({
-  children: text('text', 'Default label'),
-});
+  children: text('text', 'Default label')
+})
 
-<Meta title='Atoms/Label' component={Label} />
+<Meta title="Atoms/Label" component={Label} />
 
 # Label
 
 The `Label`
 
 <Preview>
-  <Story name='Default'>
+  <Story name="Default">
     <Label>Default label</Label>
   </Story>
 </Preview>
@@ -25,7 +25,7 @@ The `Label`
 ## Knobs
 
 <Preview>
-  <Story name='Knobs'>
+  <Story name="Knobs">
     <Label {...knobsProps()} />
   </Story>
 </Preview>

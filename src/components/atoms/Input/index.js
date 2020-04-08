@@ -1,21 +1,22 @@
-import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types'
+import styled, {css} from 'styled-components'
 
 const Input = styled.input`
   background-clip: padding-box;
-  background-color: ${(props) => props.theme.colors.neutral.percent00};
+  background-color: ${props => props.theme.colors.neutral.percent00};
   background-image: none;
   border-radius: 4px;
-  border: 1px solid ${(props) => props.theme.colors.neutral.percent20};
-  color: ${(props) => props.theme.colors.neutral.percent80};
+  border: 1px solid ${props => props.theme.colors.neutral.percent20};
+  color: ${props => props.theme.colors.neutral.percent80};
   display: block;
   font-family: inherit;
-  font-size: ${(props) => props.theme.typography.body.normal.fontSize};
-  line-height: ${(props) => props.theme.typography.body.normal.lineHeight};
+  font-size: ${props => props.theme.typography.body.normal.fontSize};
+  line-height: ${props => props.theme.typography.body.normal.lineHeight};
   font-weight: 400;
   height: 48px;
   outline: none;
-  padding: ${(props) => props.theme.spacing.sm} ${(props) => props.theme.spacing.sm};
+  padding: ${props => props.theme.spacing.sm} ${props =>
+  props.theme.spacing.sm};
   text-align: left;
   transition: border 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
   width: 100%;
@@ -30,16 +31,16 @@ const Input = styled.input`
   }
 
   &:hover {
-    border-color: ${(props) => props.theme.colors.neutral.percent80};
+    border-color: ${props => props.theme.colors.neutral.percent80};
   }
 
   &:focus {
-    border-color: ${(props) => props.theme.colors.primary.light};
-    box-shadow: 0 0 5px 0 ${(props) => props.theme.colors.primary.light};
+    border-color: ${props => props.theme.colors.primary.light};
+    box-shadow: 0 0 5px 0 ${props => props.theme.colors.primary.light};
   }
 
   &::placeholder {
-    color: ${(props) => props.theme.colors.neutral.percent40};
+    color: ${props => props.theme.colors.neutral.percent40};
     opacity: 1;
     transition: color 0.3s;
   }
@@ -47,19 +48,19 @@ const Input = styled.input`
   &:disabled,
   &[readonly] {
     background-image: none;
-    background-color: ${(props) => props.theme.colors.neutral.percent05};
-    border-color: ${(props) => props.theme.colors.neutral.percent20};
+    background-color: ${props => props.theme.colors.neutral.percent05};
+    border-color: ${props => props.theme.colors.neutral.percent20};
     cursor: not-allowed;
     opacity: 1;
     
     &,
     &::placeholder {
-      color: ${(props) => props.theme.colors.neutral.percent40};
+      color: ${props => props.theme.colors.neutral.percent40};
     }
 
     &,
     &:hover {
-      border-color: ${(props) => props.theme.colors.neutral.percent20};
+      border-color: ${props => props.theme.colors.neutral.percent20};
       box-shadow: none;
     }
   }
@@ -72,7 +73,7 @@ const Input = styled.input`
     }
   }
 
-  ${(props) =>
+  ${props =>
     (props.status === 'error' || props.status === 'success') &&
     css`
       background-position: top 12px right 12px;
@@ -85,7 +86,7 @@ const Input = styled.input`
       `}
     `}
 
-  ${(props) =>
+  ${props =>
     props.status === 'success' &&
     css`
       background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMxMDdCMDAiIGQ9Ik04LjggMTUuOWwtNC4yLTQuMi0xLjQgMS40IDUuNiA1LjYgMTItMTItMS40LTEuNC0xMC42IDEwLjZ6Ii8+PC9zdmc+');
@@ -96,7 +97,7 @@ const Input = styled.input`
       }
     `}
   
-  ${(props) =>
+  ${props =>
     props.status === 'error' &&
     css`
       background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNBOTAwMTYiIGQ9Ik0yMSAyMmgtMThjLS4zIDAtLjctLjItLjktLjUtLjItLjMtLjItLjcgMC0xbDktMThjLjMtLjcgMS40LS43IDEuOCAwbDkgMThjLjIuMy4xLjcgMCAxLS4yLjMtLjYuNS0uOS41em0tMTYuNC0yaDE0LjhsLTcuNC0xNC44LTcuNCAxNC44ek0xMSAxMGgydjZoLTJ6Ii8+PGNpcmNsZSBmaWxsPSIjQTkwMDE2IiBjeD0iMTIiIGN5PSIxOCIgcj0iMS4zIi8+PC9zdmc+');
@@ -106,11 +107,11 @@ const Input = styled.input`
         border-color: ${props.theme.colors.alert.error};
       }
     `}
-`;
+`
 
 Input.propTypes = {
   /** This Boolean attribute prevents the user from interacting with the button */
-  disabled: PropTypes.bool,
-};
+  disabled: PropTypes.bool
+}
 
-export default Input;
+export default Input

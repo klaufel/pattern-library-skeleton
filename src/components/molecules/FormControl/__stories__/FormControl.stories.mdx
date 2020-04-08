@@ -1,6 +1,6 @@
-import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
-import { text, boolean, select } from '@storybook/addon-knobs';
-import FormControl from '..';
+import {Meta, Props, Story, Preview} from '@storybook/addon-docs/blocks'
+import {text, boolean, select} from '@storybook/addon-knobs'
+import FormControl from '..'
 
 export const knobsProps = () => ({
   id: text('id', 'form-control'),
@@ -8,28 +8,44 @@ export const knobsProps = () => ({
   placeholder: text('placeholder', 'Placeholder'),
   defaultValue: text('defaultValue', ''),
   disabled: boolean('disabled', false),
-  status: select('status', { default: '', success: 'success', error: 'error' }, ''),
-  formType: select('formType', ['input', 'email', 'phone', 'number', 'password', 'textarea'], ''),
-});
+  status: select(
+    'status',
+    {default: '', success: 'success', error: 'error'},
+    ''
+  ),
+  formType: select(
+    'formType',
+    ['input', 'email', 'phone', 'number', 'password', 'textarea'],
+    ''
+  )
+})
 
-<Meta title='Molecules/FormControl' component={FormControl} />
+<Meta title="Molecules/FormControl" component={FormControl} />
 
 # FormControl
 
 The `FormControl`
 
 <Preview>
-  <Story name='Default'>
-    <FormControl id='form-control' label='Input label' />
+  <Story name="Default">
+    <FormControl id="form-control" label="Input label" />
   </Story>
-  <Story name='Email'>
-    <FormControl id='form-control-email' label='Email label' formType='email' />
+  <Story name="Email">
+    <FormControl id="form-control-email" label="Email label" formType="email" />
   </Story>
-  <Story name='Password'>
-    <FormControl id='form-control-password' label='Password label' formType='password' />
+  <Story name="Password">
+    <FormControl
+      id="form-control-password"
+      label="Password label"
+      formType="password"
+    />
   </Story>
-  <Story name='Textarea'>
-    <FormControl id='form-control-textarea' label='Textarea label' formType='textarea' />
+  <Story name="Textarea">
+    <FormControl
+      id="form-control-textarea"
+      label="Textarea label"
+      formType="textarea"
+    />
   </Story>
 </Preview>
 
@@ -42,31 +58,35 @@ The `FormControl`
 ### With placeholder
 
 <Preview>
-  <Story name='Placeholder default'>
-    <FormControl placeholder='Placeholder' id='form-control' label='Input label' />
-  </Story>
-  <Story name='Placeholder email'>
+  <Story name="Placeholder default">
     <FormControl
-      placeholder='Placeholder'
-      id='form-control-email'
-      label='Email label'
-      formType='email'
+      placeholder="Placeholder"
+      id="form-control"
+      label="Input label"
     />
   </Story>
-  <Story name='Placeholder password'>
+  <Story name="Placeholder email">
     <FormControl
-      placeholder='Placeholder'
-      id='form-control-password'
-      label='Password label'
-      formType='password'
+      placeholder="Placeholder"
+      id="form-control-email"
+      label="Email label"
+      formType="email"
     />
   </Story>
-  <Story name='Placeholder textarea'>
+  <Story name="Placeholder password">
     <FormControl
-      placeholder='Placeholder'
-      id='form-control-textarea'
-      label='Textarea label'
-      formType='textarea'
+      placeholder="Placeholder"
+      id="form-control-password"
+      label="Password label"
+      formType="password"
+    />
+  </Story>
+  <Story name="Placeholder textarea">
+    <FormControl
+      placeholder="Placeholder"
+      id="form-control-textarea"
+      label="Textarea label"
+      formType="textarea"
     />
   </Story>
 </Preview>
@@ -74,39 +94,39 @@ The `FormControl`
 ### With default value
 
 <Preview>
-  <Story name='Default value default'>
+  <Story name="Default value default">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control'
-      label='Input label'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control"
+      label="Input label"
     />
   </Story>
-  <Story name='Default value email'>
+  <Story name="Default value email">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control-email'
-      label='Email label'
-      formType='email'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control-email"
+      label="Email label"
+      formType="email"
     />
   </Story>
-  <Story name='Default value password'>
+  <Story name="Default value password">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control-password'
-      label='Password label'
-      formType='password'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control-password"
+      label="Password label"
+      formType="password"
     />
   </Story>
-  <Story name='Default value textarea'>
+  <Story name="Default value textarea">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control-textarea'
-      label='Textarea label'
-      formType='textarea'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control-textarea"
+      label="Textarea label"
+      formType="textarea"
     />
   </Story>
 </Preview>
@@ -114,42 +134,42 @@ The `FormControl`
 ### Disabled
 
 <Preview>
-  <Story name='Disabled default'>
+  <Story name="Disabled default">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control'
-      label='Email label'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control"
+      label="Email label"
       disabled
     />
   </Story>
-  <Story name='Disabled email'>
+  <Story name="Disabled email">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control-email'
-      label='Email label'
-      formType='email'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control-email"
+      label="Email label"
+      formType="email"
       disabled
     />
   </Story>
-  <Story name='Disabled password'>
+  <Story name="Disabled password">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control-password'
-      label='Password label'
-      formType='password'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control-password"
+      label="Password label"
+      formType="password"
       disabled
     />
   </Story>
-  <Story name='Disabled textarea'>
+  <Story name="Disabled textarea">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control-textarea'
-      label='Textarea label'
-      formType='textarea'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control-textarea"
+      label="Textarea label"
+      formType="textarea"
       disabled
     />
   </Story>
@@ -158,43 +178,43 @@ The `FormControl`
 ### Status success
 
 <Preview>
-  <Story name='Status success default'>
+  <Story name="Status success default">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control'
-      label='Input label'
-      status='success'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control"
+      label="Input label"
+      status="success"
     />
   </Story>
-  <Story name='Status success email'>
+  <Story name="Status success email">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control-email'
-      label='Email label'
-      formType='email'
-      status='success'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control-email"
+      label="Email label"
+      formType="email"
+      status="success"
     />
   </Story>
-  <Story name='Status success password'>
+  <Story name="Status success password">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control-password'
-      label='Password label'
-      formType='password'
-      status='success'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control-password"
+      label="Password label"
+      formType="password"
+      status="success"
     />
   </Story>
-  <Story name='Status success textarea'>
+  <Story name="Status success textarea">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control-textarea'
-      label='Textarea label'
-      formType='textarea'
-      status='success'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control-textarea"
+      label="Textarea label"
+      formType="textarea"
+      status="success"
     />
   </Story>
 </Preview>
@@ -202,43 +222,43 @@ The `FormControl`
 ### Status error
 
 <Preview>
-  <Story name='Status error default'>
+  <Story name="Status error default">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control'
-      label='Input label'
-      status='error'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control"
+      label="Input label"
+      status="error"
     />
   </Story>
-  <Story name='Status error email'>
+  <Story name="Status error email">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control-email'
-      label='Email label'
-      formType='email'
-      status='error'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control-email"
+      label="Email label"
+      formType="email"
+      status="error"
     />
   </Story>
-  <Story name='Status error password'>
+  <Story name="Status error password">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control-password'
-      label='Password label'
-      formType='password'
-      status='error'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control-password"
+      label="Password label"
+      formType="password"
+      status="error"
     />
   </Story>
-  <Story name='Status error textarea'>
+  <Story name="Status error textarea">
     <FormControl
-      placeholder='Placeholder'
-      defaultValue='Default value'
-      id='form-control-textarea'
-      label='Textarea label'
-      formType='textarea'
-      status='error'
+      placeholder="Placeholder"
+      defaultValue="Default value"
+      id="form-control-textarea"
+      label="Textarea label"
+      formType="textarea"
+      status="error"
     />
   </Story>
 </Preview>
@@ -246,7 +266,7 @@ The `FormControl`
 ## Knobs
 
 <Preview>
-  <Story name='Knobs'>
+  <Story name="Knobs">
     <FormControl {...knobsProps()} />
   </Story>
 </Preview>

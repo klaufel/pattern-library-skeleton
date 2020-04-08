@@ -21,7 +21,10 @@
     "test:watch": "jest --watch",
     "test:update": "jest --updateSnapshot",
     "test:coverage": "jest --coverage",
-    "test:coverage-web": "npm run test:coverage && open coverage/lcov-report/index.html"
+    "test:coverage-web": "npm run test:coverage && open coverage/lcov-report/index.html",
+    "lint": "npm run lint:js && npm run lint:sass",
+    "lint:js": "sui-lint js",
+    "lint:sass": "sui-lint sass"
   },
   "husky": {
     "hooks": {
@@ -48,6 +51,7 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
+    "@s-ui/lint": "^3.14.0",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-docs": "^5.3.18",
     "@storybook/addon-knobs": "^5.3.18",
@@ -58,23 +62,12 @@
     "babel-plugin-react-docgen": "^4.1.0",
     "babel-plugin-styled-components": "^1.10.7",
     "babel-polyfill": "^6.26.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^3.0.0",
-    "eslint-plugin-standard": "^4.0.1",
     "esm": "^3.2.25",
     "file-system": "^2.2.2",
     "husky": "^4.2.3",
     "jest": "^25.2.7",
     "jest-styled-components": "^7.0.0",
     "node-fetch": "^2.6.0",
-    "prettier": "^2.0.2",
     "storybook-chromatic": "^3.5.2",
     "style-dictionary": "^2.8.3"
   },
@@ -83,5 +76,14 @@
     "react-dom": "^16.13.1",
     "prop-types": "^15.7.2",
     "styled-components": "^5.0.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@s-ui/lint/eslintrc.js"
+    ]
+  },
+  "prettier": "./node_modules/@s-ui/lint/.prettierrc.js",
+  "stylelint": {
+    "extends": "./node_modules/@s-ui/lint/stylelint.config.js"
   }
 }
