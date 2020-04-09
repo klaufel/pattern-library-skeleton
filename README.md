@@ -1,12 +1,18 @@
 <h1 align="center">
+  <a href="https://zapatillasfrommars.xyz">#zapatillasFromMars👟🚀</a>
   <br><br>
-   👋 Welcome to Pattern Library Skeleton!
+   👋 Welcome to pattern library sleketon
   <br>
 </h1>
 
 <h4 align="center">A awesome design system for your products and experiences!</h4>
 
-<h3 align="center">#zapatillasFromMars👟🚀</h3>
+<p align="center">
+  <a href="https://app.netlify.com/sites/pattern-library-skeleton/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/222e8120-908e-40fe-9f3a-c59e694ed4b8/deploy-status"
+         alt="Netlify Status">
+  </a>
+</p>
 
 <p align="center">
   <a href="#fire-overview">Overview</a> •
@@ -41,7 +47,7 @@ You can clone our Git repository:
 
 Setting up, is as easy as running:
 
-`$ npm run phoenix`
+`$ npm run .`
 
 This command will install all the required dependencies. Please note that `npm install` is only required on your first start, or in case of updated dependencies.
 
