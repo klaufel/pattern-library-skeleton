@@ -1,16 +1,15 @@
 <h1 align="center">
-  <a href="https://zapatillasfrommars.xyz">#zapatillasFromMars👟🚀</a>
-  <br><br>
-   👋 Welcome to pattern library sleketon
-  <br>
+  #zapatillasFromMars👟🚀
+  <br/><br/>
+  👋 Welcome to pattern library skeleton
+  <br/><br/>
 </h1>
 
 <h4 align="center">A awesome design system for your products and experiences!</h4>
 
 <p align="center">
   <a href="https://app.netlify.com/sites/pattern-library-skeleton/deploys">
-    <img src="https://api.netlify.com/api/v1/badges/222e8120-908e-40fe-9f3a-c59e694ed4b8/deploy-status"
-         alt="Netlify Status">
+    <img src="https://api.netlify.com/api/v1/badges/222e8120-908e-40fe-9f3a-c59e694ed4b8/deploy-status" alt="Netlify Status">
   </a>
 </p>
 
