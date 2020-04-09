@@ -3,7 +3,7 @@
 // Tokens.swift
 //
 // Do not edit directly
-// Generated on Thu, 09 Apr 2020 18:23:25 GMT
+// Generated on Thu, 09 Apr 2020 18:27:47 GMT
 //
 
 
@@ -43,5 +43,5 @@ public class Tokens {
     public static let typographyHeadingSmallFontFamily = 'Open Sans'
     public static let typographyHeadingSmallFontSize = 18px
     public static let typographyHeadingSmallFontWeight = 700
-    public static let typographyHeadingSmallLineHeight = 21px
+    public static let typographyHeadingSmallLineHeight = 22px
 }
