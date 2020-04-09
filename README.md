@@ -35,7 +35,7 @@ To get you started, you need to meet the prerequisites, and then follow the inst
 #### Installing
 
 You can clone our Git repository:
-`$ git clone git@github.mpi-internal.com:scmspain/frontend-hab--uilib-components.git`
+`$ git clone git@github.com:klaufel/pattern-library-skeleton.git`
 
 #### Wiring up your development environment
 
@@ -45,7 +45,7 @@ Setting up, is as easy as running:
 
 This command will install all the required dependencies. Please note that `npm install` is only required on your first start, or in case of updated dependencies.
 
-#### Initializing SUI Studio
+#### Initializing Storybook
 
 ## :triangular_ruler: Architecture
 
