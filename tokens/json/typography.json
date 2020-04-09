@@ -1,14 +1,28 @@
 {
   "typography": {
-    "headingBig": {
+    "bodyNormal": {
       "fontFamily": {
         "value": "'Open Sans'"
       },
       "fontSize": {
-        "value": "28px"
+        "value": "14px"
       },
       "lineHeight": {
-        "value": "32px"
+        "value": "16px"
+      },
+      "fontWeight": {
+        "value": 400
+      }
+    },
+    "headingSmall": {
+      "fontFamily": {
+        "value": "'Open Sans'"
+      },
+      "fontSize": {
+        "value": "18px"
+      },
+      "lineHeight": {
+        "value": "21px"
       },
       "fontWeight": {
         "value": 700
@@ -28,32 +42,18 @@
         "value": 700
       }
     },
-    "headingSmall": {
+    "headingBig": {
       "fontFamily": {
         "value": "'Open Sans'"
       },
       "fontSize": {
-        "value": "18px"
+        "value": "28px"
       },
       "lineHeight": {
-        "value": "21px"
+        "value": "32px"
       },
       "fontWeight": {
         "value": 700
-      }
-    },
-    "bodyNormal": {
-      "fontFamily": {
-        "value": "'Open Sans'"
-      },
-      "fontSize": {
-        "value": "14px"
-      },
-      "lineHeight": {
-        "value": "16px"
-      },
-      "fontWeight": {
-        "value": 400
       }
     }
   }
