@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled, {ThemeProvider} from 'styled-components'
 import theme from '../../../styles/theme'
 import GlobalStyle from '../../../styles/GlobalStyle'
@@ -55,5 +56,9 @@ const Typography = ({typos}) => (
     </Wrapper>
   </ThemeProvider>
 )
+
+Typography.propTypes = {
+  typos: PropTypes.object
+}
 
 export default Typography

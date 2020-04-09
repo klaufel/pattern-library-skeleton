@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled, {ThemeProvider} from 'styled-components'
 import theme from '../../../styles/theme'
 import GlobalStyle from '../../../styles/GlobalStyle'
@@ -48,5 +49,9 @@ const Colors = ({colors}) => (
     </Wrapper>
   </ThemeProvider>
 )
+
+Colors.propTypes = {
+  colors: PropTypes.object
+}
 
 export default Colors
