@@ -3,7 +3,7 @@
 // TokensColor.h
 //
 // Do not edit directly
-// Generated on Fri, 10 Apr 2020 21:10:35 GMT
+// Generated on Fri, 10 Apr 2020 22:15:42 GMT
 //
 
 #import <UIKit/UIKit.h>
