@@ -91,51 +91,6 @@ exports[`Button it works disabled 1`] = `
 </button>
 `;
 
-exports[`Button it works with onClick event 1`] = `
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 4px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 14px;
-  line-height: 16px;
-  font-family: inherit;
-  outline: none;
-  border: 1px solid transparent;
-  padding: 16px 24px;
-  background-color: #2587b8;
-  color: #ffffff;
-  -webkit-transition: color 0.2s,background-color 0.2s;
-  transition: color 0.2s,background-color 0.2s;
-}
-
-.c0:hover,
-.c0:active {
-  background-color: #56a4c9;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
-.c0:disabled:hover {
-  background-color: #2587b8;
-}
-
-<button
-  class="c0"
->
-  Default button
-</button>
-`;
-
 exports[`Button it works with secondary and disabled variation 1`] = `
 .c0 {
   -webkit-align-items: center;

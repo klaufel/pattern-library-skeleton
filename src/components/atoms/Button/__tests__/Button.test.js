@@ -43,13 +43,4 @@ describe('Button', () => {
     )
     expect(container.firstChild).toMatchSnapshot()
   })
-
-  test('it works with onClick event', () => {
-    const {container} = render(
-      <ThemeProvider theme={theme}>
-        <Button onClick={() => console.log('onClick')}>Default button</Button>
-      </ThemeProvider>
-    )
-    expect(container.firstChild).toMatchSnapshot()
-  })
 })
