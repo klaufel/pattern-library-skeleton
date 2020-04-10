@@ -464,6 +464,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background: ${props => props.theme.colors.neutral.percent00};
+    font-size: ${props => props.theme.typography.body.normal.fontSize};
+    line-height: ${props => props.theme.typography.body.normal.lineHeight};
   }
 
   * {
@@ -484,10 +486,7 @@ const GlobalStyle = createGlobalStyle`
   
   p {
     margin: 0;
-  }
-
-  p + p {
-    margin-top: ${props => props.theme.spacing.xxs};
+    margin-bottom: ${props => props.theme.spacing.md};
   }
   
   a {
