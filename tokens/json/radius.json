@@ -1,0 +1,13 @@
+{
+  "radius": {
+    "sm": {
+      "value": "8px"
+    },
+    "md": {
+      "value": "16px"
+    },
+    "rounded": {
+      "value": "100px"
+    }
+  }
+}

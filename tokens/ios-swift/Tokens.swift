@@ -3,13 +3,18 @@
 // Tokens.swift
 //
 // Do not edit directly
-// Generated on Fri, 10 Apr 2020 12:44:24 GMT
+// Generated on Fri, 10 Apr 2020 17:51:54 GMT
 //
 
 
 import UIKit
 
 public class Tokens {
+    public static let breakpointLg = 1200px
+    public static let breakpointMd = 992px
+    public static let breakpointSm = 768px
+    public static let breakpointXl = 1460px
+    public static let breakpointXs = 576px
     public static let colorAlertError = UIColor(red: 0.898, green: 0.212, blue: 0.227, alpha:1)
     public static let colorAlertSuccess = UIColor(red: 0.063, green: 0.612, blue: 0.259, alpha:1)
     public static let colorAlertWarning = UIColor(red: 1.000, green: 0.663, blue: 0.051, alpha:1)
@@ -25,6 +30,9 @@ public class Tokens {
     public static let gridMd = 980px
     public static let gridSm = 768px
     public static let gridXs = 320px
+    public static let radiusMd = 16px
+    public static let radiusRounded = 100px
+    public static let radiusSm = 8px
     public static let shadowLg = 0px 4px 24px 0 rgba(0, 0, 0, 0.25)
     public static let shadowMd = 0px 4px 16px 0 rgba(0, 0, 0, 0.25)
     public static let shadowSm = 0px 4px 8px 0 rgba(0, 0, 0, 0.25)

@@ -1,7 +1,12 @@
 
 // Do not edit directly
-// Generated on Fri, 10 Apr 2020 12:44:24 GMT
+// Generated on Fri, 10 Apr 2020 17:51:54 GMT
 
+$breakpoint-xl: 1460px;
+$breakpoint-lg: 1200px;
+$breakpoint-md: 992px;
+$breakpoint-sm: 768px;
+$breakpoint-xs: 576px;
 $color-alert-warning: #ffa90d;
 $color-alert-error: #e5363a;
 $color-alert-success: #109c42;
@@ -17,6 +22,9 @@ $grid-xs: 320px;
 $grid-sm: 768px;
 $grid-md: 980px;
 $grid-lg: 1280px;
+$radius-sm: 8px;
+$radius-md: 16px;
+$radius-rounded: 100px;
 $shadow-sm: 0px 4px 8px 0 rgba(0, 0, 0, 0.25);
 $shadow-md: 0px 4px 16px 0 rgba(0, 0, 0, 0.25);
 $shadow-lg: 0px 4px 24px 0 rgba(0, 0, 0, 0.25);
