@@ -3,7 +3,7 @@
 // Tokens.swift
 //
 // Do not edit directly
-// Generated on Fri, 10 Apr 2020 17:51:54 GMT
+// Generated on Fri, 10 Apr 2020 21:10:35 GMT
 //
 
 
@@ -44,9 +44,9 @@ public class Tokens {
     public static let spacingXxl = 48px
     public static let spacingXxs = 4px
     public static let typographyBodyNormalFontFamily = 'Open Sans'
-    public static let typographyBodyNormalFontSize = 14px
+    public static let typographyBodyNormalFontSize = 16px
     public static let typographyBodyNormalFontWeight = 400
-    public static let typographyBodyNormalLineHeight = 16px
+    public static let typographyBodyNormalLineHeight = 20px
     public static let typographyHeadingBigFontFamily = 'Open Sans'
     public static let typographyHeadingBigFontSize = 28px
     public static let typographyHeadingBigFontWeight = 700

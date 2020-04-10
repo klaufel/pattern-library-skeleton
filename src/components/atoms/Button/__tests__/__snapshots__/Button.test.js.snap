@@ -12,21 +12,25 @@ exports[`Button it works default 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 20px;
   font-family: inherit;
   outline: none;
   border: 1px solid transparent;
   padding: 16px 24px;
   background-color: #2587b8;
   color: #ffffff;
-  -webkit-transition: color 0.2s,background-color 0.2s;
-  transition: color 0.2s,background-color 0.2s;
+  -webkit-transition: color 0.2s,background-color 0.2s,box-shadow 0.2s;
+  transition: color 0.2s,background-color 0.2s,box-shadow 0.2s;
 }
 
 .c0:hover,
 .c0:active {
   background-color: #56a4c9;
+}
+
+.c0:active {
+  box-shadow: 0 0 4px #56a4c9;
 }
 
 .c0:disabled {
@@ -57,21 +61,25 @@ exports[`Button it works disabled 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 20px;
   font-family: inherit;
   outline: none;
   border: 1px solid transparent;
   padding: 16px 24px;
   background-color: #2587b8;
   color: #ffffff;
-  -webkit-transition: color 0.2s,background-color 0.2s;
-  transition: color 0.2s,background-color 0.2s;
+  -webkit-transition: color 0.2s,background-color 0.2s,box-shadow 0.2s;
+  transition: color 0.2s,background-color 0.2s,box-shadow 0.2s;
 }
 
 .c0:hover,
 .c0:active {
   background-color: #56a4c9;
+}
+
+.c0:active {
+  box-shadow: 0 0 4px #56a4c9;
 }
 
 .c0:disabled {
@@ -91,6 +99,127 @@ exports[`Button it works disabled 1`] = `
 </button>
 `;
 
+exports[`Button it works with ghost and disabled variation 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: inherit;
+  outline: none;
+  border: 1px solid transparent;
+  padding: 16px 24px;
+  background-color: #2587b8;
+  color: #ffffff;
+  -webkit-transition: color 0.2s,background-color 0.2s,box-shadow 0.2s;
+  transition: color 0.2s,background-color 0.2s,box-shadow 0.2s;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.c0:hover,
+.c0:active {
+  background-color: #56a4c9;
+}
+
+.c0:active {
+  box-shadow: 0 0 4px #56a4c9;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c0:disabled:hover {
+  background-color: #2587b8;
+}
+
+.c0:hover,
+.c0:active {
+  background-color: #f2f2f2;
+}
+
+.c0:disabled:hover {
+  background-color: #ffffff;
+}
+
+<button
+  class="c0"
+  disabled=""
+>
+  Default button
+</button>
+`;
+
+exports[`Button it works with ghost variation 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: inherit;
+  outline: none;
+  border: 1px solid transparent;
+  padding: 16px 24px;
+  background-color: #2587b8;
+  color: #ffffff;
+  -webkit-transition: color 0.2s,background-color 0.2s,box-shadow 0.2s;
+  transition: color 0.2s,background-color 0.2s,box-shadow 0.2s;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.c0:hover,
+.c0:active {
+  background-color: #56a4c9;
+}
+
+.c0:active {
+  box-shadow: 0 0 4px #56a4c9;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c0:disabled:hover {
+  background-color: #2587b8;
+}
+
+.c0:hover,
+.c0:active {
+  background-color: #f2f2f2;
+}
+
+.c0:disabled:hover {
+  background-color: #ffffff;
+}
+
+<button
+  class="c0"
+>
+  Default button
+</button>
+`;
+
 exports[`Button it works with secondary and disabled variation 1`] = `
 .c0 {
   -webkit-align-items: center;
@@ -103,16 +232,16 @@ exports[`Button it works with secondary and disabled variation 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 20px;
   font-family: inherit;
   outline: none;
   border: 1px solid transparent;
   padding: 16px 24px;
   background-color: #2587b8;
   color: #ffffff;
-  -webkit-transition: color 0.2s,background-color 0.2s;
-  transition: color 0.2s,background-color 0.2s;
+  -webkit-transition: color 0.2s,background-color 0.2s,box-shadow 0.2s;
+  transition: color 0.2s,background-color 0.2s,box-shadow 0.2s;
   background-color: #ffffff;
   border-color: #cccccc;
   color: #333333;
@@ -121,6 +250,10 @@ exports[`Button it works with secondary and disabled variation 1`] = `
 .c0:hover,
 .c0:active {
   background-color: #56a4c9;
+}
+
+.c0:active {
+  box-shadow: 0 0 4px #56a4c9;
 }
 
 .c0:disabled {
@@ -161,16 +294,16 @@ exports[`Button it works with secondary variation 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 20px;
   font-family: inherit;
   outline: none;
   border: 1px solid transparent;
   padding: 16px 24px;
   background-color: #2587b8;
   color: #ffffff;
-  -webkit-transition: color 0.2s,background-color 0.2s;
-  transition: color 0.2s,background-color 0.2s;
+  -webkit-transition: color 0.2s,background-color 0.2s,box-shadow 0.2s;
+  transition: color 0.2s,background-color 0.2s,box-shadow 0.2s;
   background-color: #ffffff;
   border-color: #cccccc;
   color: #333333;
@@ -179,6 +312,10 @@ exports[`Button it works with secondary variation 1`] = `
 .c0:hover,
 .c0:active {
   background-color: #56a4c9;
+}
+
+.c0:active {
+  box-shadow: 0 0 4px #56a4c9;
 }
 
 .c0:disabled {

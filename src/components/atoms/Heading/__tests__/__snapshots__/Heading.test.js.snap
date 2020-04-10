@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading it works default 1`] = `
+.c0 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+<h1
+  class="c0"
+>
+  Minions ipsum chasy baboiii bappleees
+</h1>
+`;
+
+exports[`Heading it works with all sizes variations 1`] = `
+.c0 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0 0 24px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.c1 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.c2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0 0 24px;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+<div>
+  <h1
+    class="c0"
+  >
+    Minions ipsum chasy baboiii bappleees
+  </h1>
+  <h1
+    class="c1"
+  >
+    Minions ipsum chasy baboiii bappleees
+  </h1>
+  <h1
+    class="c2"
+  >
+    Minions ipsum chasy baboiii bappleees
+  </h1>
+</div>
+`;
+
+exports[`Heading it works with all types variations 1`] = `
+.c0 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+<div>
+  <h1
+    class="c0"
+  >
+    Minions ipsum chasy baboiii bappleees
+  </h1>
+  <h2
+    class="c0"
+  >
+    Minions ipsum chasy baboiii bappleees
+  </h2>
+  <h3
+    class="c0"
+  >
+    Minions ipsum chasy baboiii bappleees
+  </h3>
+  <h4
+    class="c0"
+  >
+    Minions ipsum chasy baboiii bappleees
+  </h4>
+  <h5
+    class="c0"
+  >
+    Minions ipsum chasy baboiii bappleees
+  </h5>
+  <h6
+    class="c0"
+  >
+    Minions ipsum chasy baboiii bappleees
+  </h6>
+  <span
+    class="c0"
+  >
+    Minions ipsum chasy baboiii bappleees
+  </span>
+</div>
+`;

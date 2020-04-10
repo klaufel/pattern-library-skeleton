@@ -5,6 +5,7 @@ import Button from '..'
 export const knobsProps = () => ({
   children: text('text', 'Default button'),
   secondary: boolean('secondary', false),
+  ghost: boolean('ghost', false),
   disabled: boolean('disabled', false)
 })
 
@@ -20,6 +21,9 @@ The `Button` usually act as the main call to action for the users, focusing thei
   </Story>
   <Story name="Secondary">
     <Button secondary>Secondary button</Button>
+  </Story>
+  <Story name="Ghost">
+    <Button ghost>Ghost button</Button>
   </Story>
 </Preview>
 
@@ -38,6 +42,11 @@ The `Button` usually act as the main call to action for the users, focusing thei
   <Story name="Secondary disabled">
     <Button secondary disabled>
       Secondary button
+    </Button>
+  </Story>
+  <Story name="Ghost disabled">
+    <Button ghost disabled>
+      Ghost button
     </Button>
   </Story>
 </Preview>

@@ -1,0 +1,64 @@
+import {Meta, Props, Story, Preview} from '@storybook/addon-docs/blocks'
+import {text, boolean} from '@storybook/addon-knobs'
+import Card from '..'
+import Button from '../../../atoms/Button'
+
+export const knobsProps = () => ({
+  title: text('text', 'Minions ipsum la bodaaa hahaha potatoooo')
+})
+
+<Meta title="Molecules/Card" component={Card} />
+
+# Card
+
+The `Card` usually act as the main call to action for the users, focusing their attention on what they need to do at each moment.
+
+<Preview>
+  <Story name="Default">
+    <Card title="Minions ipsum la bodaaa hahaha potatoooo">
+      <p>
+        Minions ipsum la bodaaa hahaha potatoooo gelatooo la bodaaa bee do bee
+        do bee do bappleees bappleees tatata bala tu.
+      </p>
+      <p>
+        Chasy po kass hahaha para tú hahaha po kass tank yuuu! Belloo! Aaaaaah
+        pepete bananaaaa. Baboiii daa ti aamoo! Poulet tikka masala daa
+        bananaaaa jeje la bodaaa. Tatata bala tu hana dul sae para tú chasy tank
+        yuuu! Jeje jeje gelatooo hana dul sae tatata bala tu pepete. Bappleees
+        tulaliloo po kass pepete para tú potatoooo. Po kass tatata bala tu
+        bappleees hana dul sae tatata bala tu tank yuuu! Underweaaar hana dul
+        sae me want bananaaa! La bodaaa. Me want bananaaa! baboiii po kass jiji
+        poulet tikka masala aaaaaah poopayee daa bee do bee do bee do chasy.
+      </p>
+      <Button>Bananaaa!</Button>
+    </Card>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Card} />
+
+## Knobs
+
+<Preview>
+  <Story name="Knobs">
+    <Card {...knobsProps()}>
+      <p>
+        Minions ipsum la bodaaa hahaha potatoooo gelatooo la bodaaa bee do bee
+        do bee do bappleees bappleees tatata bala tu.
+      </p>
+      <p>
+        Chasy po kass hahaha para tú hahaha po kass tank yuuu! Belloo! Aaaaaah
+        pepete bananaaaa. Baboiii daa ti aamoo! Poulet tikka masala daa
+        bananaaaa jeje la bodaaa. Tatata bala tu hana dul sae para tú chasy tank
+        yuuu! Jeje jeje gelatooo hana dul sae tatata bala tu pepete. Bappleees
+        tulaliloo po kass pepete para tú potatoooo. Po kass tatata bala tu
+        bappleees hana dul sae tatata bala tu tank yuuu! Underweaaar hana dul
+        sae me want bananaaa! La bodaaa. Me want bananaaa! baboiii po kass jiji
+        poulet tikka masala aaaaaah poopayee daa bee do bee do bee do chasy.
+      </p>
+      <Button>Bananaaa!</Button>
+    </Card>
+  </Story>
+</Preview>

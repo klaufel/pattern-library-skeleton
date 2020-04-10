@@ -43,4 +43,24 @@ describe('Button', () => {
     )
     expect(container.firstChild).toMatchSnapshot()
   })
+
+  test('it works with ghost variation', () => {
+    const {container} = render(
+      <ThemeProvider theme={theme}>
+        <Button ghost>Default button</Button>
+      </ThemeProvider>
+    )
+    expect(container.firstChild).toMatchSnapshot()
+  })
+
+  test('it works with ghost and disabled variation', () => {
+    const {container} = render(
+      <ThemeProvider theme={theme}>
+        <Button ghost disabled>
+          Default button
+        </Button>
+      </ThemeProvider>
+    )
+    expect(container.firstChild).toMatchSnapshot()
+  })
 })

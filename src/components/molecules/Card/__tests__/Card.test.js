@@ -3,13 +3,15 @@ import 'jest-styled-components'
 import {render} from '@testing-library/react'
 import {ThemeProvider} from 'styled-components'
 import theme from '../../../../styles/theme'
-import Label from '..'
+import Card from '..'
 
-describe('Label', () => {
+describe('Card', () => {
   test('it works default', () => {
     const {container} = render(
       <ThemeProvider theme={theme}>
-        <Label>Default label</Label>
+        <Card>
+          <p>Lorem ipsum dolor</p>
+        </Card>
       </ThemeProvider>
     )
     expect(container.firstChild).toMatchSnapshot()
