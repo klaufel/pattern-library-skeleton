@@ -18,33 +18,31 @@ const Name = styled.span`
 
 const Block = styled.div`
   display: flex;
-  align-items: flex-start;
-  width: 100%;
-
-  &:not(:last-of-type) {
-    padding-bottom: 16px;
-  }
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 33%;
+  margin-bottom: 16px;
 `
 
 const Grid = styled.div`
-  width: ${props => props.size};
-  height: ${props => props.size};
+  width: 100px;
+  height: 100px;
   background: ${props => props.theme.colors.neutral.percent20};
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  border-radius: ${props => props.borderRadius};
 `
 
-const Spacing = ({spaces}) => (
+const Radius = ({radius}) => (
   <ThemeProvider theme={theme}>
     <GlobalStyle />
     <Wrapper>
-      {Object.values(spaces).map((item, index) => {
-        const spaceName = Object.keys(spaces)
+      {Object.values(radius).map((item, index) => {
+        const shadowName = Object.keys(radius)
         return (
           <Block key={index}>
-            <Name>
-              {spaceName[index]} / {item}
-            </Name>
-            <Grid size={item} />
+            <Name>{shadowName[index]}</Name>
+            <Grid borderRadius={item} />
           </Block>
         )
       })}
@@ -52,8 +50,8 @@ const Spacing = ({spaces}) => (
   </ThemeProvider>
 )
 
-Spacing.propTypes = {
-  spaces: PropTypes.object
+Radius.propTypes = {
+  radius: PropTypes.object
 }
 
-export default Spacing
+export default Radius

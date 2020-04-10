@@ -18,13 +18,12 @@ const Text = styled.p`
 const Name = styled.span`
   font-size: 12px;
   display: block;
-  margin-bottom: 8px;
   min-width: 80px;
 `
 
 const Block = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
 
   &:not(:last-of-type) {

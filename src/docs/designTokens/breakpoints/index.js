@@ -18,7 +18,7 @@ const Name = styled.span`
 
 const Block = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
 
   &:not(:last-of-type) {
@@ -26,25 +26,25 @@ const Block = styled.div`
   }
 `
 
-const Grid = styled.div`
+const Breakpoint = styled.div`
   width: ${props => props.size};
-  height: ${props => props.size};
+  height: 24px;
   background: ${props => props.theme.colors.neutral.percent20};
   margin-bottom: 8px;
 `
 
-const Spacing = ({spaces}) => (
+const Breakpoints = ({breakpoints}) => (
   <ThemeProvider theme={theme}>
     <GlobalStyle />
     <Wrapper>
-      {Object.values(spaces).map((item, index) => {
-        const spaceName = Object.keys(spaces)
+      {Object.values(breakpoints).map((item, index) => {
+        const spaceName = Object.keys(breakpoints)
         return (
           <Block key={index}>
             <Name>
               {spaceName[index]} / {item}
             </Name>
-            <Grid size={item} />
+            <Breakpoint size={item} />
           </Block>
         )
       })}
@@ -52,8 +52,8 @@ const Spacing = ({spaces}) => (
   </ThemeProvider>
 )
 
-Spacing.propTypes = {
-  spaces: PropTypes.object
+Breakpoints.propTypes = {
+  breakpoints: PropTypes.object
 }
 
-export default Spacing
+export default Breakpoints
