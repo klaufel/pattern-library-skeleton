@@ -1,6 +1,8 @@
+import tokens from '../../../tokens/json/breakpoint'
+
 const layout = {
   grid: {
-    width: '1624px',
+    width: tokens.breakpoint.xl.value,
     columns: 12,
     gutter: {
       xs: '8px',
@@ -18,11 +20,11 @@ const layout = {
     }
   },
   breakpoints: {
-    xs: '576px', // xs: The number of columns to span on small devices (≥576px)
-    sm: '768px', // sm: The number of columns to span on medium devices (≥768px)
-    md: '992px', // md: The number of columns to span on large devices (≥992px)
-    lg: '1200px', // lg: The number of columns to span on extra large devices (≥1200px)
-    xl: '1560px' // xl: The number of columns to span on extra large devices (≥1560px)
+    xs: tokens.breakpoint.xs.value,
+    sm: tokens.breakpoint.sm.value,
+    md: tokens.breakpoint.md.value,
+    lg: tokens.breakpoint.lg.value,
+    xl: tokens.breakpoint.xl.value
   }
 }
 
