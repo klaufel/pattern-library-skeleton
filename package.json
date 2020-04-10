@@ -16,7 +16,6 @@
     "storybook:build": "build-storybook -o storybook -c .storybook",
     "prettier:check": "prettier \"./**/*.{js,mdx}\" --check",
     "prettier:write": "prettier \"./**/*.{js,mdx}\" --write",
-    "chromatic": "chromatic --app-code=zstdezwo5wk --build-script-name storybook:build",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:update": "jest --updateSnapshot",
@@ -68,7 +67,6 @@
     "jest": "^25.3.0",
     "jest-styled-components": "^7.0.2",
     "node-fetch": "^2.6.0",
-    "storybook-chromatic": "^3.5.2",
     "style-dictionary": "^2.8.3"
   },
   "dependencies": {
