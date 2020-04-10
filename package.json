@@ -40,7 +40,7 @@
       [
         "babel-plugin-styled-components",
         {
-          "fileName": false
+          "displayName": false
         }
       ],
       "react-docgen"
