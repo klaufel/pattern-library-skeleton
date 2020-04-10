@@ -1,13 +1,19 @@
+import fs from 'fs'
 import fetch from 'node-fetch'
 import getColors from './types/getColors'
 import getTypography from './types/getTypography'
 import getSpacing from './types/getSpacing'
-import fs from 'fs'
+import getShadows from './types/getShadows'
+import getBreakpoints from './types/getBreakpoints'
+import getRadius from './types/getRadius'
 
 const emojis = {
   color: '🎨',
   typography: '🖋 ',
-  spacing: '📏'
+  spacing: '📐',
+  shadow: '🌚',
+  breakpoint: '🍪',
+  radius: '🌀'
 }
 
 const genFile = (name, tokens, outDir) => {
@@ -70,16 +76,25 @@ const execute = (apikey, id, outDir) => {
         if (styles.status !== 403 && styles.status !== 404) {
           const figmaTreeStructure = styles.document.children[0].children
 
-          const tokensColors = getColors('Color', figmaTreeStructure)
-          const tokensSpacing = getSpacing('Spacing', figmaTreeStructure)
+          const tokensColors = getColors('Colors', figmaTreeStructure)
+          const tokensSpacing = getSpacing('Spacings', figmaTreeStructure)
           const tokensTypography = getTypography(
             'Typography',
             figmaTreeStructure
           )
+          const tokensShadows = getShadows('Shadows', figmaTreeStructure)
+          const tokensBreakpoints = getBreakpoints(
+            'Breakpoints',
+            figmaTreeStructure
+          )
+          const tokensRadius = getRadius('Radius', figmaTreeStructure)
 
           genFile('color', tokensColors, outDir)
           genFile('spacing', tokensSpacing, outDir)
           genFile('typography', tokensTypography, outDir)
+          genFile('shadow', tokensShadows, outDir)
+          genFile('breakpoint', tokensBreakpoints, outDir)
+          genFile('radius', tokensRadius, outDir)
         }
       })
       .catch(error => console.log(error))
