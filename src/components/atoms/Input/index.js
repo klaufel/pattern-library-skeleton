@@ -81,9 +81,9 @@ const Input = styled.input`
       background-repeat: no-repeat;
 
       ${props.small &&
-      css`
-        background-position: top 8px right 8px;
-      `}
+        css`
+          background-position: top 8px right 8px;
+        `}
     `}
 
   ${props =>
