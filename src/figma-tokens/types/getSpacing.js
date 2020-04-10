@@ -14,7 +14,6 @@ const getSpacing = (layerName, stylesArtboard) => {
       }
       Object.assign(palette.spacing, spacingObj)
     }
-    return null
   })
   return palette
 }

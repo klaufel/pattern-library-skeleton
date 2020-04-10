@@ -15,7 +15,6 @@ const getShadows = (layerName, stylesArtboard) => {
       }
       Object.assign(palette.radius, gridObj)
     }
-    return null
   })
   return palette
 }

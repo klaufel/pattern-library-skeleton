@@ -50,7 +50,6 @@ const getColors = (layerName, stylesArtboard) => {
 
       Object.assign(palette.color, colorObj)
     }
-    return null
   })
   return palette
 }

@@ -14,7 +14,6 @@ const getBreakpoints = (layerName, stylesArtboard) => {
       }
       Object.assign(palette.breakpoint, gridObj)
     }
-    return null
   })
   return palette
 }

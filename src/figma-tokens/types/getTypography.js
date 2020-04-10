@@ -26,7 +26,6 @@ const getTypography = (layerName, stylesArtboard) => {
       }
       Object.assign(palette.typography, typographyObj)
     }
-    return null
   })
   return palette
 }
