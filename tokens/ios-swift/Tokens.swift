@@ -3,7 +3,7 @@
 // Tokens.swift
 //
 // Do not edit directly
-// Generated on Thu, 09 Apr 2020 18:27:47 GMT
+// Generated on Fri, 10 Apr 2020 12:44:24 GMT
 //
 
 
@@ -21,6 +21,13 @@ public class Tokens {
     public static let colorPrimaryDark = UIColor(red: 0.114, green: 0.412, blue: 0.561, alpha:1)
     public static let colorPrimaryLight = UIColor(red: 0.337, green: 0.643, blue: 0.788, alpha:1)
     public static let colorPrimaryMain = UIColor(red: 0.145, green: 0.529, blue: 0.722, alpha:1)
+    public static let gridLg = 1280px
+    public static let gridMd = 980px
+    public static let gridSm = 768px
+    public static let gridXs = 320px
+    public static let shadowLg = 0px 4px 24px 0 rgba(0, 0, 0, 0.25)
+    public static let shadowMd = 0px 4px 16px 0 rgba(0, 0, 0, 0.25)
+    public static let shadowSm = 0px 4px 8px 0 rgba(0, 0, 0, 0.25)
     public static let spacingLg = 32px
     public static let spacingMd = 24px
     public static let spacingSm = 16px

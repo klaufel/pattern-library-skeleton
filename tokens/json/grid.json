@@ -1,0 +1,16 @@
+{
+  "grid": {
+    "xs": {
+      "value": "320px"
+    },
+    "sm": {
+      "value": "768px"
+    },
+    "md": {
+      "value": "980px"
+    },
+    "lg": {
+      "value": "1280px"
+    }
+  }
+}
