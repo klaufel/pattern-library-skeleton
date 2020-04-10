@@ -1,14 +1,4 @@
-import {camelCase} from '../utils'
-
-const parseRGBA = color => {
-  const {r, g, b, a} = color
-  return `rgba(${r}, ${g}, ${b}, ${a})`
-}
-
-const genShadow = (color, offset, radius) => {
-  const {x, y} = offset
-  return `${x}px ${y}px ${radius}px 0 ${parseRGBA(color)}`
-}
+import {camelCase, genShadow} from '../utils'
 
 const getShadows = (layerName, stylesArtboard) => {
   const palette = {shadow: {}}

@@ -1,36 +1,4 @@
-import {camelCase} from '../utils'
-
-const trim = str => str.replace(/^\s+|\s+$/gm, '')
-
-const rgbaGen = (r, g, b, a) => {
-  const getColor = color => Math.round(color * 255)
-  return `rgba(${getColor(r)}, ${getColor(g)}, ${getColor(b)}, ${a})`
-}
-
-const rgbaGenObject = (r, g, b, a) => {
-  const getColor = color => Math.round(color * 255)
-  return {r: getColor(r), g: getColor(g), b: getColor(b), a: a}
-}
-
-const rgbGen = (r, g, b) => {
-  const getColor = color => Math.round(color * 255)
-  return `rgba(${getColor(r)}, ${getColor(g)}, ${getColor(b)})`
-}
-
-const rgbToHex = rgb => {
-  let hex = Number(rgb).toString(16)
-  if (hex.length < 2) {
-    hex = '0' + hex
-  }
-  return hex
-}
-
-const fullColorHex = (r, g, b) => {
-  const red = rgbToHex(r)
-  const green = rgbToHex(g)
-  const blue = rgbToHex(b)
-  return `#${red + green + blue}`
-}
+import {camelCase, rgbaGenObject, fullColorHex} from '../utils'
 
 const getColors = (layerName, stylesArtboard) => {
   const palette = {color: {}}
