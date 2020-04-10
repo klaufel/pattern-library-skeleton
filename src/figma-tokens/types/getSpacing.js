@@ -1,21 +1,16 @@
-import {camelCase} from '../utils'
+import {getTokens, camelCase} from '../utils'
 
 const getSpacing = (layerName, stylesArtboard) => {
   const palette = {spacing: {}}
-  const paletteArtboard = stylesArtboard.filter(item => {
-    return item.name === layerName
-  })[0].children
-
-  paletteArtboard.map(item => {
-    if (item.type === 'COMPONENT') {
-      const {name, absoluteBoundingBox} = item
-      const spacingObj = {
-        [camelCase(name)]: {value: `${absoluteBoundingBox.width}px`}
-      }
-      Object.assign(palette.spacing, spacingObj)
+  const decorator = element => {
+    const {name, absoluteBoundingBox} = element
+    const tokens = {
+      [camelCase(name)]: {value: `${absoluteBoundingBox.width}px`}
     }
-  })
-  return palette
+    Object.assign(palette.spacing, tokens)
+  }
+
+  return getTokens(layerName, stylesArtboard, palette, decorator)
 }
 
 export default getSpacing
