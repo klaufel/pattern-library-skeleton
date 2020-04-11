@@ -23,7 +23,9 @@
   <a href="#mailbox-how-to-use-in-a-project">Distribution</a>
 </p>
 
-<hr />
+<p align="center">
+  <img src="https://klaufel.com/tokens/img/figma-file-tiny.png" alt="Design tokens figma file">
+</p>
 
 ## Figma design tokens example
 
@@ -51,6 +53,8 @@ Setting up, is as easy as running:
 This command will install all the required dependencies. Please note that `npm install` is only required on your first start, or in case of updated dependencies.
 
 #### Initializing Storybook
+
+`$ npm run storybook`
 
 ## :triangular_ruler: Architecture
 
