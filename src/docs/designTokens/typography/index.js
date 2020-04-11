@@ -10,9 +10,10 @@ export const Wrapper = styled.div`
 `
 
 const Text = styled.p`
-  font-size: ${props => (props.fontSize ? props.fontSize : '12px')};
-  line-height: ${props => (props.lineHeight ? props.lineHeight : 'auto')};
-  font-weight: ${props => (props.fontWeight ? props.fontWeight : '400')};
+  font-size: ${props => (props.size ? props.size : '12px')};
+  line-height: ${props => (props.line ? props.line : 'auto')};
+  font-weight: ${props => (props.weight ? props.weight : '400')};
+  margin-bottom: 0;
 `
 
 const Name = styled.span`
@@ -43,9 +44,9 @@ const Typography = ({typos}) => (
           <Block key={index}>
             <Name>{typoNames[index]}</Name>
             <Text
-              fontSize={item.fontSize}
-              lineHeight={item.lineHeight}
-              fontWeight={item.fontWeight}
+              size={item.fontSize}
+              line={item.lineHeight}
+              weight={item.fontWeight}
             >
               {mockText}
             </Text>

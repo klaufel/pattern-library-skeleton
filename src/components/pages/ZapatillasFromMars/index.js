@@ -66,15 +66,16 @@ const ZapatillasFromMars = () => (
               (en remoto).
             </p>
             <p>
-              Qué, ¿te unes? 😉
+              Sigue a uiFromMars en Twitch y recibirás una notificación cuando
+              empiece el directo 😉
               <br />
               <a
                 className="button gtm_landing-page_apuntate"
-                href="http://eepurl.com/gXsoG1"
+                href="https://www.twitch.tv/uifrommars/"
                 alt="Asiste a #zapatillasFromMars"
                 target="_blank"
               >
-                Apúntate aquí :)
+                Accede a Twitch
               </a>
             </p>
           </div>

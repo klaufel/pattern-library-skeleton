@@ -16,4 +16,15 @@ describe('Card', () => {
     )
     expect(container.firstChild).toMatchSnapshot()
   })
+
+  test('it works with title', () => {
+    const {container} = render(
+      <ThemeProvider theme={theme}>
+        <Card title="Card title">
+          <p>Lorem ipsum dolor</p>
+        </Card>
+      </ThemeProvider>
+    )
+    expect(container.firstChild).toMatchSnapshot()
+  })
 })

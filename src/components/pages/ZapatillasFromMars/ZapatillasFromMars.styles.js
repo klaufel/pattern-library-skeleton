@@ -6,9 +6,9 @@ export const GlobalStyle = createGlobalStyle`
     --dark-bg: ${props => props.theme.colors.primary.dark};
     --mark: ${props => props.theme.colors.primary.light};
     --bg: ${props => props.theme.colors.primary.main};
-    --manatee: #8e8e98;
-    --alto: #dcdcdc;
-    --white: #ffffff;
+    --manatee: ${props => props.theme.colors.neutral.percent20};
+    --alto: ${props => props.theme.colors.neutral.percent05};
+    --white: ${props => props.theme.colors.neutral.percent00};
   }
 
   @font-face {
@@ -32,6 +32,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: var(--dark-bg);
     font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 600;
+    font-size: ${props => props.theme.typography.body.normal.fontSize};
     color: var(--manatee);
   }
 `
@@ -45,15 +46,16 @@ export const Wrapper = styled.div`
 
   h1 {
     font-family: 'Px Grotesk', Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 2.625rem;
+    font-weight: ${props => props.theme.typography.heading.big.fontWeight};
+    font-size: ${props => props.theme.typography.heading.big.fontSize};
+    line-height: ${props => props.theme.typography.heading.big.lineHeight};
     color: var(--white);
   }
 
   table,
   p {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: ${props => props.theme.typography.body.normal.fontSize};
     margin-bottom: 1.5rem;
   }
 
@@ -206,7 +208,7 @@ export const Wrapper = styled.div`
 
   div.title {
     flex: 1 1 100%;
-    margin-bottom: 2.625rem;
+    margin-bottom: 20px;
   }
 
   div.explanation {
