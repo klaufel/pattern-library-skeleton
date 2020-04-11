@@ -1,6 +1,16 @@
 {
   "source": ["tokens/**/*.json"],
   "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "buildPath": "tokens/css/",
+      "files": [
+        {
+          "destination": "variables.css",
+          "format": "css/variables"
+        }
+      ]
+    },
     "scss": {
       "transformGroup": "scss",
       "buildPath": "tokens/scss/",
@@ -8,6 +18,26 @@
         {
           "destination": "_variables.scss",
           "format": "scss/variables"
+        }
+      ]
+    },
+    "json-flat": {
+      "transformGroup": "web",
+      "buildPath": "tokens/json-flat/",
+      "files": [
+        {
+          "destination": "variables.json",
+          "format": "json/flat"
+        }
+      ]
+    },
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "tokens/js/",
+      "files": [
+        {
+          "destination": "tokens.js",
+          "format": "javascript/es6"
         }
       ]
     },
