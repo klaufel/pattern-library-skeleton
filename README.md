@@ -90,7 +90,8 @@ When we use the library, the maximum level of component that we are going to hav
     ├── components
     │	├── atoms
     │	├── molecules
-    │ └── pages
+    │	├── organism
+    │	└── pages *
     ├── docs
     ├── figma-tokens
     ├── styles
