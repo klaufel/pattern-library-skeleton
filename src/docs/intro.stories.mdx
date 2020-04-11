@@ -2,23 +2,11 @@ import {Meta, Props, Story, Preview} from '@storybook/addon-docs/blocks'
 
 <Meta title="Overview/Intro" />
 
-# 👋 Welcome to pattern library skeleton
+# 👋 Welcome to #zapatillasFromMars👟🚀
 
-Pattern library skeleton is an open-source, high-quality library of reusable React components that empower teams to craft any product with ease.
+![Figma design tokens file](https://klaufel.com/tokens/img/figma-file.png)
 
-### #zapatillasFromMars👟🚀
-
-![Figma design tokens file](https://raw.githubusercontent.com/klaufel/pattern-library-skeleton/master/docs/img/figma-file.png)
-
-![Duplicate figma file](https://raw.githubusercontent.com/klaufel/pattern-library-skeleton/master/docs/img/duplicate-file.png)
-
-![Copy figma id](https://raw.githubusercontent.com/klaufel/pattern-library-skeleton/master/docs/img/copy-figma-id.png)
-
-![Get access token](https://raw.githubusercontent.com/klaufel/pattern-library-skeleton/master/docs/img/get-access-token.png)
-
-![Paste config](https://raw.githubusercontent.com/klaufel/pattern-library-skeleton/master/docs/img/paste-config.png)
-
-## Design tokens
+# Design tokens
 
 - [🍪 Breakpoints](/?path=/docs/overview-design-tokens-🍪-breakpoints--page)
 - [🎨 Colors](/?path=/docs/overview-design-tokens-🎨-colors--page)
@@ -27,41 +15,44 @@ Pattern library skeleton is an open-source, high-quality library of reusable Rea
 - [📐 Spacing](/?path=/docs/overview-design-tokens-📐-spacing--page)
 - [🖋 Typography](/?path=/docs/overview-design-tokens-🖋typography--page)
 
-<br />
-<br />
+# Let´s start!
 
-Juan Carlos
-https://github.com/klaufel/pattern-library-skeleton
+## Duplicate figma design tokens file
 
-GitHub
-klaufel/pattern-library-skeleton
-Contribute to klaufel/pattern-library-skeleton development by creating an account on GitHub.
-ese es el repo
-que acabo de hacerlo público
-estoy generando la documentación, asi que de momento te lo digo aqui
-npm install && npm run storybook
-después:
-npm run tokens
-debe de haberte generado unos ficheros (que ya tendrás) en /tokens
-y si haces un git status / git diff debería de haberte actualizado solo la fecha de generación
-vale, hasta ahí bien
-ahora, necesito también que te hagas una cuenta en figma (supongo que ya tendrás)
-y te generes una API KEY:
-puedes hacerlo aquí: https://www.figma.com/developers/api
-si bajas mas abajo tienes un botón de generarlo (estando logueado)
-una vez hecho eso, entras aquí: https://www.figma.com/file/IGr2xoqcZX91CU7CDr4ZsI
-Figma
-Design tokens (skeleton)
-Created with Figma
-[Video]
-y te copias el fichero en tu cuenta, puedes hacerlo así:
-[Foto]
-y ya lo tendrías en tu cuenta
-una vez que lo tengas en tu cuenta, debes de copiar el ID de ese documento
-[Foto]
-te viene en la url
-y lo pegas en: figma.config:athletic_shoe::rocket:
-junto con la API key que habrás generado
-de momento esto último no lo vamos a tocar
-cuando vayas a hacerlo me avisas
-gracias !!!
+**Figma file:** [https://www.figma.com/file/IGr2xoqcZX91CU7CDr4ZsI](https://www.figma.com/file/IGr2xoqcZX91CU7CDr4ZsI)
+
+![Duplicate figma file](https://klaufel.com/tokens/img/duplicate-file.png)
+
+## Get your figma file id
+
+![Copy figma id](https://klaufel.com/tokens/img/copy-figma-id.png)
+
+## Get your figma API key
+
+https://www.figma.com/developers/api
+
+![Get access token](https://klaufel.com/tokens/img/get-access-token.png)
+
+You can clone our Git repository:
+`$ git clone git@github.com:klaufel/pattern-library-skeleton.git`
+
+Install dependencies
+`$ npm install`
+
+And then, launch storybook
+`$ npm run storybook`
+
+Modify config with your figma API key and figma id
+`$ figma.config.json`
+
+![Create config](https://klaufel.com/tokens/img/create-config.png)
+
+Generate design tokens as variables
+
+`$ npm run tokens`
+
+`$ npm run tokens:api` Generate tokens data base (only figma)
+
+`$ npm run tokens:build` Generate all plattforms tokens vars with a figma data base
+
+😊 Enjoy!
