@@ -19,6 +19,7 @@ export function cli() {
         throw new Error('\x1b[31m\n\n❌ No Figma ID found!\n\n')
       } else {
         if (!FIGMA_OUTDIR)
+          // eslint-disable-next-line no-console
           console.warn('⚠️ No outdir found, default outdir is `./tokens.json`')
         fs.mkdir(FIGMA_OUTDIR, null, err => {
           if (err) {
