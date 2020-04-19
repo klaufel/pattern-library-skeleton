@@ -76,7 +76,10 @@
   "eslintConfig": {
     "extends": [
       "./node_modules/@s-ui/lint/eslintrc.js"
-    ]
+    ],
+    "env": {
+      "jest": true
+    }
   },
   "prettier": "./node_modules/@s-ui/lint/.prettierrc.js",
   "stylelint": {
