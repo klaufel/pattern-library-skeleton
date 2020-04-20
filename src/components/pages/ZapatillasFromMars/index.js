@@ -32,9 +32,10 @@ const ZapatillasFromMars = () => (
               />
               <a
                 href="https://www.uifrommars.com"
-                target="uiFromMars"
                 className="gtm_landing-page_uifrommars"
-                alt="_blank"
+                title="uiFromMars"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
                   src="https://www.uifrommars.com/zapatillas/assets/uifrommars.svg"
@@ -46,9 +47,10 @@ const ZapatillasFromMars = () => (
               </a>
               <a
                 href="https://www.holaluz.com"
-                target="Holaluz"
                 className="gtm_landing-page_holaluz"
-                alt="_blank"
+                title="Holaluz"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
                   src="https://www.uifrommars.com/zapatillas/assets/holaluz.svg"
@@ -72,8 +74,9 @@ const ZapatillasFromMars = () => (
               <a
                 className="button gtm_landing-page_apuntate"
                 href="https://www.twitch.tv/uifrommars/"
-                alt="Asiste a #zapatillasFromMars"
+                title="Asiste a #zapatillasFromMars"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Accede a Twitch
               </a>
@@ -200,16 +203,18 @@ const ZapatillasFromMars = () => (
             una iniciativa de{' '}
             <a
               href="https://www.uifrommars.com"
-              alt="uiFromMars"
+              title="uiFromMars"
               target="_blank"
+              rel="noopener noreferrer"
             >
               uiFromMars
             </a>{' '}
             w/
             <a
               href="https://www.twitter.com/cbusquets"
-              alt="Cris Busquets"
+              title="Cris Busquets"
               target="_blank"
+              rel="noopener noreferrer"
             >
               @cbusquets
             </a>{' '}

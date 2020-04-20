@@ -24,6 +24,7 @@ const genFile = (name, tokens, outDir) =>
       if (err) {
         throw new Error(`\x1b[31m\n\n❌ ${err}\n\n`)
       }
+      // eslint-disable-next-line no-console
       console.log(
         `\x1b[32m ${
           emojis[name]
@@ -33,6 +34,7 @@ const genFile = (name, tokens, outDir) =>
   )
 
 const genTokens = (apikey, id, outDir) => {
+  // eslint-disable-next-line no-console
   console.log('\x1b[40m 👟 🚀  Connecting from mars... \x1b[0m\n')
   const FETCH_URL = `https://api.figma.com/v1/files/${id}`
   const FETCH_DATA = {
@@ -45,6 +47,7 @@ const genTokens = (apikey, id, outDir) => {
   try {
     fetch(FETCH_URL, FETCH_DATA)
       .then(response => {
+        // eslint-disable-next-line no-console
         console.log(
           ' Connection with Figma is successful...\n\n----------------\n'
         )
