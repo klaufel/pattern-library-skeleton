@@ -5,7 +5,7 @@
   <br/><br/>
 </h1>
 
-<h4 align="center">A awesome design system for your products and experiences!</h4>
+<h4 align="center">An awesome design system for your products and experiences!</h4>
 
 <p align="center">
   <a href="https://pattern-library-skeleton.netlify.com">
@@ -27,36 +27,37 @@
 
 ## :fire: Overview
 
-We use of the best tools to improve the workflow to allow you to create an awesome library of components!
+We use the best tools to improve our workflow, allowing us to create an awesome library of components!
 
 - [ReactJs](https://facebook.github.io/react/) v16
 - Type checking with [PropTypes](https://www.npmjs.com/package/prop-types)
 - [styled-components](https://styled-components.com/) for styling components and application
-- Compiled of modern JavaScript with [Babel](https://github.com/babel/babel) and bundle with [Webpack](https://webpack.js.org/)
+- Compiling of modern JavaScript with [Babel](https://github.com/babel/babel) and bundling with [Webpack](https://webpack.js.org/)
 - [Jest](https://jestjs.io/) and [Testing library](https://testing-library.com/) for unit/ui testing
-- Automate Git hooks with [Husky](https://github.com/typicode/husky)
+- Automated Git hooks with [Husky](https://github.com/typicode/husky)
 - Code linting using [Eslint](https://github.com/eslint/eslint)
 - Code formatter using [Prettier](https://prettier.io/)
 - Developing isolated UI components with [Storybook](https://storybook.js.org/)
 
 ## :rocket: Getting Started
 
-To get you started, you need to meet the prerequisites, and then follow the installation instructions.
+To get started you need to meet the prerequisites, and then follow the installation instructions.
 
 #### Figma design tokens example
 
 **Figma file:** [https://www.figma.com/file/IGr2xoqcZX91CU7CDr4ZsI](https://www.figma.com/file/IGr2xoqcZX91CU7CDr4ZsI)
 
-For more info to config your design tokens file, visit ["How to configure design tokens with Figma API"](https://pattern-library-skeleton.netlify.com/?path=/docs/overview-intro--page)
+For more info on configuring your design tokens file, visit ["How to configure design tokens with Figma API"](https://pattern-library-skeleton.netlify.com/?path=/docs/overview-intro--page)
 
 #### Installing
 
 You can clone our Git repository:
+
 `$ git clone git@github.com:klaufel/pattern-library-skeleton.git`
 
 #### Wiring up your development environment
 
-Setting up, is as easy as running:
+Hooking it up is as easy as running:
 
 `$ npm run install`
 
@@ -72,7 +73,7 @@ This command will install all the required dependencies. Please note that `npm i
 
 ## :triangular_ruler: Architecture
 
-Based on [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/) principles, methodology for creating design systems. There are five distinct levels of components:
+Based on the [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/) principles, a methodology for creating design systems, there are five distinct levels of components:
 
 - Atomic Design component structure:
   - Atoms
@@ -81,7 +82,7 @@ Based on [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/) pri
   - Templates
   - Pages
 
-When we use the library, the maximum level of component that we are going to have would be an `organism`, the rest of the `templates`and `pages` components are built in the application that imports the library.
+When we use a UI library, the highest abstraction of components that we expose would be an `organism`. The rest of the `template` and `page` components are built within the application that imports the library.
 
 ##### Source project structure:
 
@@ -98,10 +99,10 @@ When we use the library, the maximum level of component that we are going to hav
     └── index.js (entry point)
 ```
 
-- `src`: The place where to put our application source code - `components` Add your components here! This folder is divided from [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/) principles.
-- `docs` Add documentation as stories for design system.
-- `figma-tokens` Folder all functions to generate figma design tokens with API.
-- `styles` Folder to add global styles and theme to build components.
+- `src`: The place where we put our application source code - `components` Add your components here! This folder is divided from [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/) principles.
+- `docs` Our documentation as stories for the design system.
+- `figma-tokens` Directory containing functions to generate figma design tokens with API.
+- `styles` Directory to add global styles and theme to build components.
 - `index.js` Entry point, import all components and export to generate package to use in project as a dependency.
 
 ---
@@ -120,15 +121,15 @@ When we use the library, the maximum level of component that we are going to hav
     └── index.js
 ```
 
-- **mycomponent**: Folder which contains our component.
-  - `__stories__`: Folder to contains the stories for Storybook.
-    - `MyComponent.stories.js`: Contains the stories of component for Storybook
-  - `__tests__`: Folder to contains the tests of component.
-    - `__snapshots__`: Folder to contains the snapthots tests, autogenerated for jest.
-      - `MyComponent.test.js.snap`: Snapshot file, autogenerated for jest.
-    - `MyComponent.test.js`: Contains the test of component.
-  - `MyComponent.styles.js`: Contain the styles of component (styled-components / CSS-in-JS).
-  - `index.js`: Contains the React component, HTML or other imports from ui-library.
+- **mycomponent**: Directory containing our component.
+  - `__stories__`: Directory containing the stories for Storybook.
+    - `MyComponent.stories.js`: File containing the component stories.
+  - `__tests__`: Directory containing the tests for Jest.
+    - `__snapshots__`: Directory containing the autogenerated Jest Snapshots.
+      - `MyComponent.test.js.snap`: Autogenerated Snapshot file.
+    - `MyComponent.test.js`: File containing the component tests.
+  - `MyComponent.styles.js`: File containing the component styles (styled-components / CSS-in-JS).
+  - `index.js`: File containing the React component, HTML or other imports from ui-library.
 
 ## :nail_care: Guidelines
 
@@ -144,7 +145,7 @@ When we use the library, the maximum level of component that we are going to hav
 
 ## :pray: Testing the application
 
-[Jest](https://jestjs.io/), a delightful javascript testing framework and [Testing Library](https://testing-library.com/) builds on top of DOM testing library by adding APIs for working with React components.
+[Jest](https://jestjs.io/), a delightful javascript testing framework and [Testing Library](https://testing-library.com/) build on top of DOM testing library by adding APIs for working with React components.
 
 #### Running your tests
 
@@ -156,4 +157,4 @@ When we use the library, the maximum level of component that we are going to hav
 
 `$ npm run test:coverage` Will perform your unit testing and show coverage.
 
-`$ npm run test:coverage-web` Will perform your unit testing and show coverage and open report in your default browser.
+`$ npm run test:coverage-web` Will perform your unit testing, show coverage, and open the report in your default browser.
