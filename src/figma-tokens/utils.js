@@ -23,13 +23,12 @@ export const camelCase = string => {
 
 export const trim = str => str.replace(/^\s+|\s+$/gm, '')
 
-export const rgbaGen = (r, g, b, a) => {
-  const getColor = color => Math.round(color * 255)
-  return `rgba(${getColor(r)}, ${getColor(g)}, ${getColor(b)}, ${a})`
-}
+export const getColor = color => Math.round(color * 255)
+
+export const rgbaGen = (r, g, b, a) =>
+  `rgba(${getColor(r)}, ${getColor(g)}, ${getColor(b)}, ${a})`
 
 export const rgbaGenObject = (r, g, b, a) => {
-  const getColor = color => Math.round(color * 255)
   return {r: getColor(r), g: getColor(g), b: getColor(b), a: a}
 }
 
