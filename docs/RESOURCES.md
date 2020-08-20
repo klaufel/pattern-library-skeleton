@@ -11,3 +11,6 @@
 https://designsystemchecklist.com/category/design-tokens/
 
 https://github.com/sturobson/Awesome-Design-Tokens
+
+A designer’s guide to the Figma API
+https://medium.com/@danhollick/a-designers-guide-to-the-figma-api-64f2755969d5
