@@ -59,7 +59,7 @@ You can clone our Git repository:
 
 Hooking it up is as easy as running:
 
-`$ npm run install`
+`$ npm install`
 
 This command will install all the required dependencies. Please note that `npm install` is only required on your first start, or in case of updated dependencies.
 
